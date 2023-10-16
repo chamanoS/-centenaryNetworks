@@ -129,6 +129,38 @@ a {
     color: #ff6804;
 }
 
+.partner-section {
+    display: flex;
+    max-width: 100%;
+    box-shadow: 0 4px 20px -8px rgba(0,0,0,.35);
+}
+.partner-section h1{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    padding-left: 80px;
+    margin-right: 20px;
+    font-size: 35px;
+}
+.pt{
+    margin-left: 5px;
+}
+.slick-list{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin-left: 20px;
+}
+
+.list-slide {
+    list-style: none; 
+    padding-left: 20px;
+
+}
+.list-slide img{
+    width: 100px;
+}
+
 
 
 
