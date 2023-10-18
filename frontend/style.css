@@ -143,17 +143,23 @@ a {
     justify-content: center; 
     align-items: center;
     padding-left: 80px;
-    /* margin-right: 20px; */
-    font-size: 35px;
+    margin-right: 60px;
+    font-size: 45px;
 }
 .pt{
     margin-left: 5px;
+}
+.partners-slide {
+    overflow: hidden;
 }
 .slick-list{
     display: flex;
     justify-content: center; 
     align-items: center;
     margin-left: 20px;
+    list-style: none;
+    padding: 0;
+    animation: slide 10s linear infinite;
 }
 
 .list-slide {
@@ -162,7 +168,16 @@ a {
 
 }
 .list-slide img{
-    width: 100px;
+    width: 120px;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
 }
 
 /* Moribi's styling starts here */
