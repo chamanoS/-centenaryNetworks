@@ -1,42 +1,42 @@
-// document.querySelector(".btn-collapse").addEventListener("click", function () {
-//     document.querySelector(".collapse").classList.toggle("show");
-// });
-
-
-// const slideContainer = document.getElementById('slide-container');
-
-// // Adjust the animation duration and timing function as needed
-// slideContainer.style.animation = 'slide 40s linear infinite'; // 10s duration, linear timing function
-
-// // To make it speed up and slow down, you can adjust the animation-timing-function like this:
-// slideContainer.style.animation = 'slide 25s ease-in-out infinite'; // Speeds up at the beginning and slows down at the end
-
 
 // const slideContainer = document.getElementById('slide-container');
 
 // function restartAnimation() {
 //     slideContainer.style.animation = 'none';
-//     void slideContainer.offsetWidth; // Trigger reflow
-//     slideContainer.style.animation = 'slide 10s ease-in-out infinite'; // Adjust the duration and timing function as needed
+//     void slideContainer.offsetWidth; 
+//     slideContainer.style.animation = 'slide 70s linear infinite'; 
+//     slideContainer.style.animation = 'slide 70s ease-in-out infinite'; 
 // }
 
 // slideContainer.addEventListener('animationiteration', restartAnimation);
 
-// restartAnimation(); // Start the animation
+// restartAnimation(); 
 
-const slideContainer = document.getElementById('slide-container');
 
-function restartAnimation() {
-    slideContainer.style.animation = 'none';
-    void slideContainer.offsetWidth; // Trigger reflow
-    slideContainer.style.animation = 'slide 30s linear infinite'; // Adjust the duration and timing function as needed
-    slideContainer.style.animation = 'slide 25s ease-in-out infinite';
+const cardWrapper = document.querySelector(".card-wrapper");
+const cards = document.querySelectorAll(".card");
+const prevBtn = document.getElementById("prevBtn");
+const nextBtn = document.getElementById("nextBtn");
+
+let cardIndex = 0;
+const cardWidth = cards[0].offsetWidth;
+
+function showCards() {
+    cardWrapper.style.transform = `translateX(-${cardIndex * cardWidth}px)`;
 }
 
-// Initially, set a negative delay to ensure the first slide starts immediately
-slideContainer.style.animationDelay = '-10s';
+function slideNext() {
+    cardIndex = Math.min(cardIndex + 1, cards.length - 3);
+    showCards();
+}
 
-slideContainer.addEventListener('animationiteration', restartAnimation);
+function slidePrev() {
+    cardIndex = Math.max(cardIndex - 1, 0);
+    showCards();
+}
 
-restartAnimation(); // Start the animation
+nextBtn.addEventListener("click", slideNext);
+prevBtn.addEventListener("click", slidePrev);
 
+// Initialize the slide
+showCards();
