@@ -1,31 +1,38 @@
 
-const cardWrapper = document.querySelector(".card-wrapper");
-const cards = document.querySelectorAll(".card");
-const prevBtn = document.getElementById("prevBtn");
-const nextBtn = document.getElementById("nextBtn");
+// function Dropdown(event){
+// const dynamic_id = event.replace("dropdown","collapse");
+// // const getElement = document.getElementById("dropdown_1");
+// const dynamic_collapseID = document.getElementById(dynamic_id).nextElementSibling.firstChild;
+// console.log("nextSiblingID" + dynamic_collapseID)
+// const getCollapse = document.getElementById("collapse_1");
 
-let cardIndex = 0;
-const cardWidth = cards[0].offsetWidth;
+// dynamic_id.addEventListener("click",()=>{
+//     console.log(getCollapse)
+//     getCollapse.classList.toggle("show");
 
-function showCards() {
-    cardWrapper.style.transform = `translateX(-${cardIndex * cardWidth}px)`;
-}
+//     if(document.getElementById(dynamic_id).nextElementSibling.classList == "block"){
+//         document.querySelector(".span-down").style.display = "block";
+//         document.querySelector(".span").style.display = "none";
 
-function slideNext() {
-    cardIndex = Math.min(cardIndex + 1, cards.length - 3);
-    showCards();
-}
+//     }
+// })
 
-function slidePrev() {
-    cardIndex = Math.max(cardIndex - 1, 0);
-    showCards();
-}
+// }
 
-nextBtn.addEventListener("click", slideNext);
-prevBtn.addEventListener("click", slidePrev);
-
-// Initialize the slide
-showCards();
-
-
-
+function Dropdown(dropdownId) {
+  
+    const collapseId = dropdownId.replace("dropdown_", "collapse_");
+    const dropdownHeader = document.getElementById(dropdownId);
+    const collapseContent = document.getElementById(collapseId);
+  
+    if (collapseContent.style.display === "block") {
+      collapseContent.style.display = "none";
+      dropdownHeader.querySelector(".span").style.display = "block";
+      dropdownHeader.querySelector(".span-down").style.display = "none";
+    } else {
+      collapseContent.style.display = "block";
+      dropdownHeader.querySelector(".span").style.display = "none";
+      dropdownHeader.querySelector(".span-down").style.display = "block";
+    }
+  }
+  

@@ -258,6 +258,7 @@ a {
 }
 .FAQ-titles {
     text-align: center;
+    margin-bottom: 50px;
 }
 
 .FAQ-titles h1{
@@ -268,22 +269,39 @@ a {
     font-weight: 600;
     font-size: 16px;
     }
+    .dropdown-item{
+        border-bottom: 2px solid rgba(71, 71, 71, 0.178);
+    }
 .dropdown-header{
         display: flex;
         justify-content: space-between;
         align-items: center;
-      
+        cursor: pointer;
     }
 
 .span img{
     width: 30px;
     height: 30px;
 }
+.span-down img{
+    width: 30px;
+    height: 30px;
+}
+.main-dropdown{
+display: none;
+  /* max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease; */
+}
+.show{
+    display: block;
+}
 .dropdown-collapse{
     display: flex;
     padding: 10px;
     border-bottom: 1px solid rgba(128, 128, 128, 0.425);
     border-top: 1px solid rgba(128, 128, 128, 0.425);
+
 }
 .span-img img{
     width: 50px;
