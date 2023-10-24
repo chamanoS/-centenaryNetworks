@@ -1,3 +1,5 @@
+
+- @import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
 *{
     margin: 0px;
     padding: 0px;
@@ -183,38 +185,87 @@ a {
 
 
 /* styling testimonials */
-.card-wraper{
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-}
-.card{
-    border: 1px solid lightcyan;
-    margin: 10px;
-    height: 300px;
-    width: 33.33%;
-    padding: 20px;
-    box-sizing: border-box;
-    transition: transform 0.5s;
-    overflow-x: scroll;
-}
-.card img {
-    max-width: 100%;
-}
-
-/* Hide overflow content */
 .cards-holder{
-    overflow: hidden;
+    border: 1px solid lightcyan;
     position: relative;
     width: 100%;
     max-width: 100%;
 }
+.card-wraper{
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    justify-content: center;
+}
+.card{
+    box-shadow: 0 1px 15px rgba(0,0,0,.2);
+    margin: 15px;
+    height: 400px;
+    width: 300px;
+    padding: 15px;
+    box-sizing: border-box;
+    transition: transform 0.5s;
+    overflow-y:auto;
+}
+.card-titles{
+    margin-left: 150px;
+    font-family: Poppins ,sans-serif;
+    margin-bottom: 40px;
+}
+.card-titles h1{
+ font-size: 36px;
+ font-weight: 600;
+}
+.card-titles p {
+    font-weight: 600;
+    margin-top: -20px;
+    font-size: 16px;
+   }
+.card img {
+    width: 250px;
+    height: 150px;
+}
+.card h3{
+   margin-top: -15px;
+   margin-bottom: -20px;
+}
+.card h5{
+    margin-bottom: 25px;
+}
+.card p{
+    color: #949494;
+}
+.arrows{
+    width: 40px;
+    height: 40px;
+    font-weight: 900;
+    cursor: pointer;
+}
+.prevBtn{
+    position: absolute;
+    left: 70px;
+    top: 350px;
+}
+.nextBtn{
+    position: absolute;
+    right: 70px;
+    top: 350px;
+}
+
+/* the end of testimonials styling */
+
+/* Hide overflow content */
+
 
 .btn {
     margin-top: 10px;
     cursor: pointer;
 }
 
+/* Media query for mobile devices */
+@media (max-width: 320px) {
+   
+}
 
 /* Media query for small screens (hide the navigation items) */
 @media (max-width: 768px) {
@@ -228,12 +279,20 @@ a {
     .collapse {
         flex-direction: column;
     }
+
+}
+@media (max-width: 1024px) {
+   
 }
 
 
 /* Hamburger button styles for small screens */
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
     .btn-collapse {
         display: block;
     }
+}
+
+@media (min-width: 1200px) {
+   
 }
