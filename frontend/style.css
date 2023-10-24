@@ -253,7 +253,7 @@ a {
 
 /* Styling the FAQ */
 .FAQ{
-    margin: 100px 0;
+    margin: 100px;
     font-family: Poppins ,sans-serif;
 }
 .FAQ-titles {
@@ -268,8 +268,28 @@ a {
     font-weight: 600;
     font-size: 16px;
     }
+.dropdown-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      
+    }
 
-
+.span img{
+    width: 30px;
+    height: 30px;
+}
+.dropdown-collapse{
+    display: flex;
+    padding: 10px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.425);
+    border-top: 1px solid rgba(128, 128, 128, 0.425);
+}
+.span-img img{
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
 /* Media query for mobile devices */
 @media (max-width: 320px) {
    
