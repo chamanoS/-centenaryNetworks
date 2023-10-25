@@ -15,6 +15,7 @@
 ### Primary
 
 - Moderate orange: #f47929
+- Faded orange: #f47a29af
 - Sky blue : #007bff
 
 ### Neutral

@@ -214,20 +214,17 @@ a {
 .card-titles h1{
  font-size: 36px;
  font-weight: 600;
+ margin-bottom: 13px;
 }
 .card-titles p {
     font-weight: 600;
-    margin-top: -20px;
     font-size: 16px;
    }
 .card img {
     width: 250px;
     height: 150px;
 }
-.card h3{
-   margin-top: -15px;
-   margin-bottom: -20px;
-}
+
 .card h5{
     margin-bottom: 25px;
 }
@@ -264,6 +261,7 @@ a {
 .FAQ-titles h1{
     font-size: 36px;
     font-weight: 600;
+    margin-bottom: 20px;
    }
 .FAQ-titles p {
     font-weight: 600;
@@ -277,35 +275,38 @@ a {
         justify-content: space-between;
         align-items: center;
         cursor: pointer;
+        padding: 12px 0;
     }
-
+    .dropdown-header{
+        color: #333a46e8;
+    }
 .span img{
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
 }
 .span-down img{
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
 }
 .main-dropdown{
 display: none;
-  /* max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.5s ease; */
 }
 .show{
     display: block;
 }
 .dropdown-collapse{
     display: flex;
-    padding: 10px;
+    padding: 50px 0;
     border-bottom: 1px solid rgba(128, 128, 128, 0.425);
     border-top: 1px solid rgba(128, 128, 128, 0.425);
 
 }
+.dropdown-collapse p{
+    word-spacing:1px ;
+}
 .span-img img{
-    width: 50px;
-    height: 50px;
+    width: 85px;
+    height: 85px;
     margin-right: 20px;
 }
 /* Media query for mobile devices */
