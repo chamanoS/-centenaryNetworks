@@ -1,0 +1,55 @@
+/* Base styles for the navigation */
+
+@media screen and (max-width: 480px) {
+    .navigator {
+        /* Mobile styles (320px to 480px) */
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .btn-collapse {
+        display: block;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-item {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .navigator {
+        /* Styles for screens between 480px and 768px */
+        padding: 10px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .navigator {
+        /* Tablet styles (768px to 1024px) */
+        padding: 10px 20px;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+    .navigator {
+        /* Laptops styles (1024px to 1440px) */
+        padding: 10px 20px;
+    }
+}
+
+@media screen and (min-width: 1441px) and (max-width: 1920px) {
+    .navigator {
+        /* Desktop styles (1440px to 1920px) */
+        padding: 10px 20px;
+    }
+}
+
+/* Additional styles for larger screens can be added here */
+
+
