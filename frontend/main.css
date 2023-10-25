@@ -1,12 +1,18 @@
 
-.background{
+/* The start of B-BBEE section */
+.B-BBEE{
+    margin: 0 50px;
+    padding: 48px 8px;
+}
+
+.B-BBEE_background{
     background-color: #0074A7;
     margin: 10px 6px;
     padding: 16px;
     border-radius: 6px;
 }
 
-.top_div{
+.B-BBEE_calculation{
     background-color: #fff;
     border-radius: 6px;
     border: 3px solid #fff;
@@ -14,7 +20,7 @@
     margin-bottom: 32px;
     padding: 16px;
 }
-.bottom_div{
+.B-BBEE_disclaimer{
     background-color: #fff;
     border: 3px solid #fff;
     border-radius: 6px;
@@ -23,28 +29,28 @@
     color: #414042;
     padding-left: 20px;
 }
-.bottom_div h5{
+.B-BBEE_disclaimer h5{
     font:20px Poppins,sans-serif;
     display: flex;
     justify-content: center;
     margin:0 0 8px;
 }
 
-.bottom_div > p{
+.B-BBEE_disclaimer > p{
     font:13px Poppins,sans-serif;
     font-weight:lighter;
     margin: 0px 0px 16px;
   
 }
 
-.top_div h4{
+.B-BBEE_calculation h4{
     display:flex ;
     justify-content: center;
     color: #0074A7;
     font:22.71px Poppins,sans-serif;
     margin:0px 0px 8px;
 }
-.top_div h5{
+.B-BBEE_calculation h5{
     display:flex ;
     justify-content: center;
     margin:24px;
@@ -54,12 +60,12 @@
     color: #414042;
 }
 
-.icons{
+.B-BBEE_icons{
     display: flex;
     justify-content:space-between;  
 }
 
-.btn{
+.B-BBEE_btn{
     background-color: #0074A7;
     font-weight: 700;
     height: 50px;
@@ -74,47 +80,39 @@
     padding:  6px 12px;
 }
 
-.btn:hover{
+.B-BBEE_btn:hover{
     background-color:#00638e;
 }
-.btn a{
+.B-BBEE_btn a{
     text-decoration: none;
     color: #fff;
 }
-.bee_div{
-    margin-bottom: 30px;
-    
+.B-BBEE_div{
+    margin-bottom: 30px;  
 }
-#digital_learning{
+
+
+/*Start of Digital Learning */
+.digital_learning{
    padding: 48px 8px;
    margin: 0px 50px;
-   
 }
 
-.new_earning{
-    margin: 0 50px;
-    padding: 48px 8px;
-}
-
-.bbee{
-    /* the font_size is 16px on the page, 
-    i changed it so that the paragraph matches the on
-     in the webpage*/
+.digital_learning_paragraph{
     font:15px Poppins,sans-serif;
     color: #414042;
     margin: 0 17px;
     padding: 0 12px;
-    text-align: center;
-    
+    text-align: center;  
 }
 
-.bbee >p{
+.digital_learning_paragraph >p{
     text-align: center;
     line-height: 20px;
     margin: 0px 0px 16px; 
 }
 
-.bbee h1{
+.digital_learning_paragraph h1{
     text-align:center;
     font:36px Poppins,sans-serif;
     margin: 0px 0px 24px;
@@ -122,16 +120,16 @@
 span{
     color: #0074A7;
 }
-.para{
+.digital_learning_paragraph_1{
     color: #0074A7;
     padding-bottom: 14px;
 }
-.buttons{
+.digital_learning_buttons{
     display: flex;
     justify-content: center;
     
 }
-.buttons a{
+.btns a {
     text-transform: uppercase;
     font:16px Poppins,sans-serif;
     display: inline-block;
@@ -144,29 +142,29 @@ span{
     cursor: pointer;
 }
 
-#first_btn{
+.first_btn{
     margin: 4px 8px 4px 0px;
     padding: 6px 12px;
     background-color: #0074A7;
 }
 
- #second_btn{
+ .second_btn{
     margin: 4px 0px;
     padding: 6px 12px;
     background-color: #414042;
 }
-#first_btn:hover{
+.first_btn:hover{
     background-color: #00638e;
 }
 
-#second_btn:hover{
+.second_btn:hover{
     background-color: #5c636a;;
 }
 
+/* Start of Training */
 .Training{
     background-color:#A4D2E7 ;
-    padding: 16px 0px;
-   
+    padding: 16px 0px;  
 }
 
 .Training_div2{
@@ -193,7 +191,6 @@ span{
 .Training_img2{
     display: flex;
     width: 100%;
-    
 }
 
  .Training_img1 h4{
@@ -219,44 +216,43 @@ span{
     font:20px Poppins,sans-serif;
     color: #414042;
     margin: 0px 0px 8px;
-    
 }
 
-.pic{
+.Training_learners{
    margin: 0px 16px;
 }
 
-.pic2{
+.Training_Omang{
     margin: 0px 16px;
 }
 
-.pic2 h6{
+.Training_Omang h6{
     display:flex; 
 }
 
-.pic2 h4{
+.Training_Omang h4{
     justify-items: center;
 }
 
-.last_p{
+.Training_p{
     text-align: center;
 }
 
-.paras_img{
+.Training_tablet{
     margin:0px 16px;
 
 }
-.paras{
+.Training_content{
     margin:0px 16px; 
 }
 
+
+/* Start of Computer */
 .computer{
     padding: 48px 8px;
-    /* background-color: aqua;  */
-  
 }
 
-.divs{
+.computer_content{
     display: flex;
     align-items: center;
     justify-content: center; 
@@ -277,39 +273,6 @@ span{
      height: 368.17px;
 }
 
-.computer_msg a{
-    text-transform: uppercase;
-    font:16px Poppins,sans-serif;
-    display: inline-block;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 0.375rem;
-    border: none;
-    line-height: 30px;
-    color: #fff;
-    cursor: pointer;
-}
-
-.btn1{
-    padding: 6px 12px;
-    background-color: #0074A7;
-    margin: 4px 8px 4px 0px;
-}
-
-.btn2{
-    padding: 6px 12px;
-    background-color: #414042;
-    margin: 4px 0px;
-}
-
-.btn1:hover{
-    background-color: #00638e;
-}
-
-.btn2:hover{
-    background-color: #5c636a;;
-}
-
 .computer_msg h1{
     font:36px Poppins,sans-serif;
     margin: 0px 0px 24px;
@@ -327,10 +290,10 @@ span{
 
 .computer_msg img{
     width: 400px;
-    margin: 24px 0px;
-    
+    margin: 24px 0px; 
 }
 
+/* Start of revolution */
 .revolution{
     background-color: #D1E8F3;
     padding: 48px 8px;
@@ -340,7 +303,6 @@ span{
 .revolution_box{
     margin: 0px 137px;
     padding: 0px 12px; 
-    
 }
 
 .revolution_box h1{
@@ -357,19 +319,15 @@ span{
     text-align: center;
 }
 
-.revolution_icons{
+.revolution_divs{
     margin: 0px 24px;
-    /* display: flex;
-    align-items: center; 
-    justify-content: center;  */
     width: 1014px;
     height: 329.57px ; 
     width: 100%;
     padding-right: 70px;
-    
 }
 
-.icon1{
+.revolution_icons{
     margin:16px 0px;
     padding: 0px 24px;
     display: flex;
@@ -378,7 +336,7 @@ span{
     height:132.79px ;
 }
 
-.icon1_img{
+.revolution_img{
     background-color: #0074A7; 
     border-radius: 12px;
     height: 124px !important;
@@ -389,244 +347,116 @@ span{
     margin: 0px 24px 0px 0px;
     
 }
-.icon1_img img{
+.revolution_img img{
   width: 93px;
 }
 
-.icon1_text{
+.revolution_text{
     width: 311px;
     height: 132.79px;
 }
 
-.icon1_text h2{
+.revolution_text h2{
     font-size:32px;
     margin: 0px 0px 4px;
     color: #414042; 
 }
-.icon1_text h5{
+.revolution_text h5{
     font-size:20px;
     margin: 0px 0px 8px;
     color: #0074A7;
 }
-.icon1_text h6{
+.revolution_text h6{
     font-size:14px;
     margin: 0px 0px 8px;
     color: #414042;
     font-weight: normal;
 }
 
-
-.icon2{
-    margin:16px 0px;
-    padding: 0px 24px;
-    display: flex;
-    align-items: center; 
-    width:459px ;
-    height:132.79px ;
-}
-
-/* .icon2_img{
-    background-color: #0074A7; 
-    border-radius: 12px;
-    height: 124px;
-    width:124px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0px 24px 0px 0px;
-     
-}*/
-.icon2_img img{
-  width: 93px;
-}
-
-.icon2_text{
-    width: 311px;
-    height: 132.79px;
-}
-
-.icon2_text h2{
-    font-size:32px;
-    margin: 0px 0px 4px;
-    color: #414042; 
-}
-.icon2_text h5{
-    font-size:20px;
-    margin: 0px 0px 8px;
-    color: #0074A7;
-}
-.icon2_text h6{
-    font-size:14px;
-    margin: 0px 0px 8px;
-    color: #414042;
-    font-weight: normal;
-}
-
-
-.icon3{
-    margin:16px 0px;
-    padding: 0px 24px;
-    display: flex;
-    align-items: center;
-    width:459px ;
-    height:132.79px ;
-}
-
-.icon3_img img{
-  width: 93px;
-}
-
-.icon3_text{
-    width: 311px;
-    height: 132.79px;
-}
-
-.icon3_text h2{
-    font-size:32px;
-    margin: 0px 0px 4px;
-    color: #414042; 
-}
-.icon3_text h5{
-    font-size:20px;
-    margin: 0px 0px 8px;
-    color: #0074A7;
-}
-.icon3_text h6{
-    font-size:14px;
-    margin: 0px 0px 8px;
-    color: #414042;
-    font-weight: normal;
-}
-
-.icon4{
-    margin:16px 0px;
-    padding: 0px 24px;
-    display: flex;
-    align-items: center;
-    width:459px ;
-    height:132.79px ;
-}
-
-/* .icon4_img{
-    background-color: #0074A7; 
-    border-radius: 12px;
-    height: 124px;
-    width:124px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0px 24px 0px 0px;
-    
-} */
-.icon4_img img{
-  width: 93px;
-}
-
-.icon4_text{
-    width: 311px;
-    height: 132.79px;
-}
-
-.icon4_text h2{
-    font-size:32px;
-    margin: 0px 0px 4px;
-    color: #414042; 
-}
-.icon4_text h5{
-    font-size:20px;
-    margin: 0px 0px 8px;
-    color: #0074A7;
-}
-.icon4_text h6{
-    font-size:14px;
-    margin: 0px 0px 8px;
-    color: #414042;
-    font-weight: normal;
-}
-
-.group1{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-}
-.group2{
+.revolution_group{
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
 }
 
-.video{
+/* Start of Social Impact */
+.social_impact{
     padding: 48px 8px;
     width: 1280px;
     height: 460.39px;
     font-family:Poppins,sans-serif;
 }
 
-.video_content{
+.social_impact_container{
     display: flex;
     justify-content: center;
-    /* align-items: center; */
 }
-.video_div{
-    padding: 0px 24px;
-    width: 582px;
-    height: 364.39px;
-}
-.video_text_con{
+.social_impact_image{
     padding: 0px 24px;
     width: 582px;
     height: 364.39px;
 }
 
-.video_div img{
+.social_impact_image img{
     width: 534px;
     height: 300.59px;
 }
+.social_impact_content{
+    padding: 0px 24px;
+    width: 582px;
+    height: 364.39px;
+    margin-right: 120px;
+}
 
-.video_text h1{
+.social_impact_text h1{
     font-size: 36px;
     margin: 0px 0px 8px;
 }
 
-.video_text >p{
+.social_impact_text >p{
     color: #414042;
     font-size: 16px;
     margin: 0px 0px 16px;
 }
 
-.video_text .p1{
+.social_impact_text .p1{
     margin: 0px 0px 24px;  
 }
-.video_text a{
-    text-transform: uppercase;
-    font:16px Poppins,sans-serif;
-    display: inline-block;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 0.375rem;
-    border: none;
-    line-height: 30px;
+
+/* Start of Footer */
+
+.social{
+    background-color: #414042;
+}
+.social_bar{
+    padding: 16px 0px;
+}
+.social_icons{
+    display: flex;
+    justify-content:center; 
+}
+
+.social img{
+    padding: 8px;
+}
+
+.social_copyright_text{
+    color:#72797E;
+    font:12px Poppins,sans-serif;
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+}
+
+.social_copyright_text a{
     color: #fff;
+    margin: 0px 0px 8px;
+    font:14px Poppins,sans-serif;
     cursor: pointer;
 }
-.video_text .btn_1{
-    padding: 6px 12px;
-    background-color: #0074A7;
-    margin: 4px 8px 4px 0px;
 
-}
-.video_text .btn_2{
-    padding: 6px 12px;
-    background-color: #414042;
-    margin: 4px 0px; 
-}
-
-.btn_1:hover{
-    background-color: #00638e;
-}
-
-.btn_2:hover{
-    background-color: #5c636a;;
+.call_back{
+    text-align: center;
+    margin: 40px 0px;
 }
