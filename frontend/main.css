@@ -400,12 +400,12 @@ span{
     padding: 0px 24px;
     width: 582px;
     height: 364.39px;
-    margin-right: 120px;
+    /* margin-right: 120px; */
 }
 
 .social_impact_text h1{
     font-size: 36px;
-    margin: 0px 0px 8px;
+    /* margin: 0px 0px 8px; */
 }
 
 .social_impact_text >p{

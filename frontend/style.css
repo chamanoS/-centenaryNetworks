@@ -310,13 +310,22 @@ display: none;
     margin-right: 20px;
 }
 /* Media query for mobile devices */
-@media (max-width: 320px) {
+@media (min-width: 375px) {
+    .navigator{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .navbar-collapse{
+        display: none;
+    }
    
 }
 
 /* Media query for small screens (hide the navigation items) */
 @media (max-width: 768px) {
-    .navbar-nav {
+    /* .navbar-nav {
         display: none; 
     }
     .nav-item {
@@ -325,7 +334,7 @@ display: none;
     }
     .collapse {
         flex-direction: column;
-    }
+    } */
 
 }
 @media (max-width: 1024px) {
@@ -334,9 +343,7 @@ display: none;
  
 
 @media (max-width: 1200px) {
-    .btn-collapse {
-        display: block;
-    }
+   
 }
 
 @media (min-width: 1200px) {
