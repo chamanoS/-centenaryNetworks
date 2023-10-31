@@ -1,63 +1,115 @@
 /* Base styles for the navigation */
 
-@media (max-width: 480px) {
-    .navigator{
+@media screen and (max-width: 480px) {
+    .navigator {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
-    .btn-collapse{
+
+    .btn-collapse {
         display: block;
         margin-top: -30px;
     }
-    .btn-collapse img{
+
+    .btn-collapse img {
         width: 35px;
         height: auto;
     }
-    .collapse{
-        display: none!important;
+
+    .collapse {
+        display: none !important;
     }
-    .nav-logo img{
+
+    .nav-logo img {
         width: 100px;
         height: auto;
     }
-  .donate{display: none;}
-    
+
+    .donate {
+        display: none;
+    }
+    .text{
+        width: 55%;
+    }
+    .title{
+        font-size: 20px;
+        margin-left: -70px;
+        margin-top: -30px;
+    }
+    .text p{
+        margin-left: -70px;
+        margin-top: 10px;
+        font-size: 12px;
+    }
+    .verified{
+        margin-left:-70px ;
+        padding-top: 60px;
+    }
+    .verified img{
+        height: 35px;
+        width: auto;
+        margin-bottom: 80px;
+    }
+
 }
 
-
 @media screen and (min-width: 481px) and (max-width: 768px) {
-    .navigator{
+    .navigator {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
-    .btn-collapse{
+
+    .btn-collapse {
         display: block;
         margin-top: -30px;
     }
-    .btn-collapse img{
+
+    .btn-collapse img {
         width: 35px;
         height: auto;
     }
-    .collapse{
-        display: none!important;
+
+    .collapse {
+        display: none !important;
     }
-    .nav-logo img{
+
+    .nav-logo img {
         width: 100px;
         height: auto;
+    }
+    .text{
+        width: 45%;
+    }
+    .title{
+        margin-left: -40px;
+        font-size: 22px;
+    }
+    .text p{
+        margin-left: -40px;
+        font-size: 13px;
+    }
+    .verified{
+        margin-left:-40px ;
+        padding-top: 80px;
+    }
+    .verified img{
+        margin-bottom: 80px;
     }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-    .nav-logo img{
+    .nav-logo img {
         width: 110px;
         height: auto;
     }
-    .donate{
-      padding: 8px;
+
+    .donate {
+        padding: 8px;
     }
-    .nav-item{
+
+    .nav-item {
         font-weight: 700;
         font-size: 11.2px;
         margin-right: 7px !important;
@@ -66,17 +118,15 @@
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1440px) {
-.nav-item {
-    margin-right: 20px;
-    font-size: 14px;
-    font-weight: 700;
-}
+    .nav-item {
+        margin-right: 20px;
+        font-size: 14px;
+        font-weight: 700;
+    }
 }
 
 @media screen and (min-width: 1441px) and (max-width: 1920px) {
-  
+
 }
 
 /* Additional styles for larger screens can be added here */
-
-
