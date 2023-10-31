@@ -26,17 +26,51 @@
 }
 
 
-
 @media screen and (min-width: 481px) and (max-width: 768px) {
-   
+    .navigator{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .btn-collapse{
+        display: block;
+        margin-top: -30px;
+    }
+    .btn-collapse img{
+        width: 35px;
+        height: auto;
+    }
+    .collapse{
+        display: none!important;
+    }
+    .nav-logo img{
+        width: 100px;
+        height: auto;
+    }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-  
+    .nav-logo img{
+        width: 110px;
+        height: auto;
+    }
+    .donate{
+      padding: 8px;
+    }
+    .nav-item{
+        font-weight: 700;
+        font-size: 11.2px;
+        margin-right: 7px !important;
+    }
+
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1440px) {
-  
+.nav-item {
+    margin-right: 20px;
+    font-size: 14px;
+    font-weight: 700;
+}
 }
 
 @media screen and (min-width: 1441px) and (max-width: 1920px) {
