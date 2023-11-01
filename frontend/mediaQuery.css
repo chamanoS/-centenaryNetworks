@@ -77,7 +77,15 @@
     .B-BBEE_icons{
         display: inline;
     }
-
+    .Training_div2{
+        display: inline-block;
+    }
+    .Training_img1{
+        display: inline-block;
+    }
+    .Training_img2{
+        display: inline-block;
+    }
 
 }
 
@@ -154,6 +162,15 @@
     .B-BBEE_icons img{
         margin-left: 50px;
     }
+    .Training_div2{
+        display: inline-block;
+    }
+    /* .Training_img1{
+        display: inline-block;
+    }
+    .Training_img2{
+        display: inline-block;
+    } */
    
 }
 
