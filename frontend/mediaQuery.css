@@ -86,6 +86,25 @@
     .Training_img2{
         display: inline-block;
     }
+    .computer_content{
+        display: inline-block;
+    }
+    .computer_content img{
+        width: 250px;
+        height: auto;
+    }
+    .computer_msg{
+        width: fit-content;
+    }
+    .revolution_box{
+        margin: 0;
+    }
+    .revolution_group{
+        display: inline-block;
+    }
+    .revolution_icons{
+        display: inline-block;
+    }
 
 }
 
@@ -165,12 +184,22 @@
     .Training_div2{
         display: inline-block;
     }
-    /* .Training_img1{
+    .Training_img1{
         display: inline-block;
     }
     .Training_img2{
         display: inline-block;
-    } */
+    }
+    .computer_content{
+        display: inline-block;
+    }
+    .computer_content img{
+        width: 300px;
+        height: auto;
+    }
+    .computer_msg{
+        width: fit-content;
+    }
    
 }
 
@@ -213,6 +242,24 @@
         margin: 0;
         padding: 10px;
         font-size: 15px;
+    }
+    .Training_div2{
+        display: inline-block;
+    }
+    /* .Training_img1{
+        display: inline-block;
+    }
+    .Training_img2{
+        display: inline-block;
+    } */
+    .computer_content img{
+        width: 300px;
+        height: auto;
+    }
+    .computer_msg{
+        width: fit-content;
+        margin: 0;
+        padding-right: 0;
     }
 
 }
