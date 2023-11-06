@@ -315,11 +315,11 @@ span{
 }
 
 .revolution_divs{
-    margin: 0px 24px;
-    width: 1014px;
+    /* margin: 0px 24px; */
+    /* width: 1014px;
     height: 329.57px ; 
-    width: 100%;
-    padding-right: 70px;
+    width: 100%; */
+    /* padding-right: 70px; */
 }
 
 .revolution_icons{
@@ -327,8 +327,8 @@ span{
     padding: 0px 24px;
     display: flex;
     align-items: center;
-    width:459px ;
-    height:132.79px ;
+    /* width:459px ;
+    height:132.79px ; */
 }
 
 .revolution_img{

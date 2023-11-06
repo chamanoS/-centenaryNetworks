@@ -200,6 +200,15 @@
     .computer_msg{
         width: fit-content;
     }
+    .revolution_box{
+        margin: 0;
+    }
+    .revolution_group{
+        display: inline-block;
+    }
+    .revolution_icons{
+        display: inline-block;
+    }
    
 }
 
