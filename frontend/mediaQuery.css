@@ -209,7 +209,14 @@
     .revolution_icons{
         display: inline-block;
     }
-   
+    /* .revolution_icons{
+        margin:16px 0px;
+        padding: 0px 24px;
+        display: flex;
+        display: inline-block;
+        align-items: center;
+        
+    } */
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
