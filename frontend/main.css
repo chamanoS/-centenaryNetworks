@@ -385,20 +385,20 @@ span{
     display: flex;
     justify-content: center;
 }
-.social_impact_image{
+/* .social_impact_image{
     padding: 0px 24px;
     width: 582px;
     height: 364.39px;
-}
+} */
 
 .social_impact_image img{
-    width: 534px;
-    height: 300.59px;
+    max-width: 100%;
+    height: auto;
 }
 .social_impact_content{
     padding: 0px 24px;
-    width: 582px;
-    height: 364.39px;
+    /* width: 582px; */
+    /* height: 364.39px; */
     /* margin-right: 120px; */
 }
 

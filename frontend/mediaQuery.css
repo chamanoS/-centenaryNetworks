@@ -105,6 +105,9 @@
     .revolution_icons{
         display: inline-block;
     }
+    .social_impact_container{
+        display: inline-block;
+    }
 
 }
 
@@ -217,6 +220,9 @@
         align-items: center;
         
     } */
+    .social_impact_container{
+        display: inline-block;
+    }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
@@ -276,6 +282,9 @@
         width: fit-content;
         margin: 0;
         padding-right: 0;
+    }
+    .social_impact_container{
+        display: inline-block;
     }
 
 }
