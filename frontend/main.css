@@ -421,6 +421,8 @@ span{
 
 .social{
     background-color: #414042;
+    position: relative;
+    top: 250px;
 }
 .social_bar{
     padding: 16px 0px;
