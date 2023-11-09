@@ -179,16 +179,30 @@ a {
 }
 
 /* styling testimonials */
-.cards-holder{
+/* .cards-holder{
     position: relative;
     width: 100%;
     max-width: 100%;
+} */
+/* .main-card-wrapper{
+    height: 600px;
+    margin-top: 50px;
+} */
+.holder{
+    padding: 10px;
+    margin: 15px;
+    margin-bottom: 20px!important;
+    position: relative;
+    top: 250px;
 }
 .card-wraper{
     display: flex;
     align-items: center;
     overflow: hidden;
     justify-content: center;
+}
+.card-titles {
+    margin: 20px;
 }
 .card{
     box-shadow: 0 1px 15px rgba(0,0,0,.2);
@@ -200,11 +214,11 @@ a {
     transition: transform 0.5s;
     overflow-y:auto;
 }
-.centers{
+/* .centers{
     margin-left: 150px;
     font-family: Poppins ,sans-serif;
     margin-bottom: 40px;
-}
+} */
 .card-titles h1{
  font-size: 36px;
  font-weight: 600;
