@@ -260,6 +260,8 @@ a {
 .FAQ{
     margin: 100px;
     font-family: Poppins ,sans-serif;
+    position: relative;
+    top: 270px;
 }
 .FAQ-titles {
     text-align: center;

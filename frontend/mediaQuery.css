@@ -114,6 +114,16 @@
     .scroll-arrows{
         display: none;
     }
+    .FAQ{
+        margin: 20px;
+    }
+    .dropdown-collapse{
+        display: inline-block;
+       
+    }
+    .span-img img{
+        margin-bottom: 10px;
+    }
 
 }
 
@@ -236,6 +246,17 @@
     .scroll-arrows{
         display: none;
     }
+    .FAQ{
+        margin: 50px;
+    }
+    .dropdown-collapse{
+        display: inline-block;
+        padding: 20px 0;
+    }
+    .span-img img{
+        margin-bottom: 10px;
+    }
+    
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
@@ -324,6 +345,12 @@
         right: -20px;
         top: 300px;
     }
+    .FAQ{
+        margin: 70px;
+        position: relative;
+        top: 290px;
+    }
+   
 
 }
 
@@ -359,12 +386,21 @@
         right: -10px;
         top: 300px;
     }
+    .FAQ{
+        position: relative;
+        top: -70px;
+    }
+    
 }
 
 @media screen and (min-width: 1441px) and (max-width: 1920px) {
     .holder{
         position: relative;
         top: 50px;
+    }
+    .FAQ{
+        position: relative;
+        top: 0px;
     }
 }
 
