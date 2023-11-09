@@ -70,20 +70,17 @@
     justify-content:space-between;  
 }
 
-.B-BBEE_btn{
+/* .B-BBEE_btn{
     background-color: #0074A7;
     font-weight: 700;
     height: 50px;
     border-radius: 6px;
     margin-left: 350px;  
-    align-items: center;
-    display: flex;
-    justify-content: center;
     width: max-content;
     font:20px Poppins,sans-serif;
     margin-bottom: 10px;
     padding:  6px 12px;
-}
+} */
 
 .B-BBEE_btn:hover{
     background-color:#00638e;
