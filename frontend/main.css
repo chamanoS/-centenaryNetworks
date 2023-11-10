@@ -24,6 +24,7 @@
     padding-bottom: 32px 0;
     margin-bottom: 32px;
     padding: 16px;
+    display: none;
 }
 .B-BBEE_disclaimer{
     background-color: #fff;
@@ -107,6 +108,25 @@
 }
 .B-BBEE_div{
     margin-bottom: 30px;  
+}
+
+/* Calculating points */
+.B-BBEE-Points{
+    width: 100%;
+}
+.B-BBEE-wraper{
+    display: flex;
+    padding: 20px;
+    margin: 10px;
+}
+.B-BBEE-form{
+    width: 70%;
+    background-color: white;
+    border-radius: 5px;
+}
+.display-points{
+    width:30% ;
+    background-color: gray;
 }
 
 
