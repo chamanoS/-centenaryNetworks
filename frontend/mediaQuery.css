@@ -397,6 +397,10 @@
        bottom: 0px;
        margin-top: -380px;
     }
+    .social_impact_text .btns a{
+        padding: 5px;
+        margin: 0;
+    }
     
 }
 
