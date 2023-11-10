@@ -353,6 +353,10 @@
         position: relative;
         top: 290px;
     }
+    .computer_msg .btns a{
+        padding: 5px;
+        margin: 0;
+    }
    
 }
 

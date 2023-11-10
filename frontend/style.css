@@ -94,6 +94,9 @@ a {
 .nav-link:hover {
     padding-bottom: 15px;
 }
+.menu{
+    display: block;
+}
 
 .main-banner {
     min-height: 50vh;
