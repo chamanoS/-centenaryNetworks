@@ -39,3 +39,46 @@ document.addEventListener('DOMContentLoaded', function () {
   })
 
 })
+
+
+function validateForm() {
+  var form = document.getElementById("myForm");
+  if (form.checkValidity()) {
+    // Form is valid, show modal
+    document.getElementById("myModal").style.display = "flex";
+  } else {
+    // Form is invalid, highlight fields
+    var inputs = form.querySelectorAll(":invalid");
+    inputs.forEach(function (input) {
+      input.style.borderColor = "red";
+    });
+  }
+}
+
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+
+// document.getElementById("email").addEventListener("mouseover", showHoverText);
+// document.getElementById("contact").addEventListener("mouseover", showHoverText);
+
+// // Function to show the hover text
+// function showHoverText() {
+//   var hoverText = document.createElement("div");
+//   hoverText.textContent = "Hello Tax Users";
+//   hoverText.classList.add("hover-text");
+//   this.parentNode.appendChild(hoverText);
+
+//   // Remove the hover text after a brief delay (you can adjust the delay as needed)
+//   setTimeout(function () {
+//     hoverText.remove();
+//   }, 2000); // 2000 milliseconds (2 seconds) delay in this example
+// }
+
+$(document).ready(function() {
+  $('[data-toggle="popover"]').popover({
+     placement: 'top',
+     trigger: 'hover'
+  });
+});

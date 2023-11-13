@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./main.css">
     <link rel="stylesheet" href="./mediaQuery.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -148,16 +152,37 @@
 
                     <div class="B-BBEE-Points">
                         <div class="B-BBEE-wraper">
-                            <div class="B-BBEE-form">
+                            <div class="B-BBEE-form accords">
                                 <div class="accordition-item">
                                     <div class="accordition-header">
                                         <h3>Your Details</h3>
-                                        <span><img src="" alt=""></span>
+                                        <span><img src="./assets/arrow-up.png" alt=""></span>
+                                    </div>
+                                    <div class="modal-form">
+                                        <form id="myForm">
+                                           
+                                            <input type="text" id="name" name="name" placeholder="Enter Your name" required>
+                                          
+                                      
+                                            <input type="email" id="email" name="email" placeholder="Enter Your email" required  data-toggle="popover" title="Modal Short Text" data-content="You gotta go through it to see there ain't nothing to it. Listen to the silence.">
+                                          
+                                          
+                                            <input type="text" id="contact" name="contact" placeholder="Enter Your Contact Cell Number" required>
+                                          
+                                            <button type="button" onclick="validateForm()">CONTINUE</button>
+                                          </form>
+                                          
+                                          <div class="modal" id="myModal">
+                                            <div class="modal-content">
+                                              <p>Form submitted successfully!</p>
+                                              <button class="close-btn" onclick="closeModal()">Close</button>
+                                            </div>
+                                          </div>
                                     </div>
                                 </div>
     
                             </div>
-                            <div class="display-points">
+                            <div class="display-points accords">
                                 <div class="point-pc">
                                     <h1>Your Points</h1>
                                     <p>0</p>
