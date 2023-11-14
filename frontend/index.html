@@ -133,7 +133,7 @@
 
             <section class="B-BBEE" id="B-BBEE_Cal">
                 <div class="B-BBEE_background">
-                    <div class="B-BBEE_calculation">
+                    <div class="B-BBEE_calculation" id="B-BBEE_calculation">
                         <div class="B-BBEE_div">
                             <h4><b>Get Your B-BBEE Audit Verification Pack Now!</b></h4>
                             <h5>Odin is powered by 3 supporting entities, allowing us to supply ESD and SED B-BBEE
@@ -150,11 +150,11 @@
                         </div>
                     </div>
 
-                    <div class="B-BBEE-Points">
+                    <div class="B-BBEE-Points" id="B-BBEE-Points">
                         <div class="B-BBEE-wraper">
                             <div class="B-BBEE-form accords">
                                 <div class="accordition-item">
-                                    <div class="accordition-header">
+                                    <div class="accordition-headers">
                                         <h3>Your Details</h3>
                                         <span><img src="./assets/arrow-up.png" alt=""></span>
                                     </div>
@@ -162,11 +162,11 @@
                                         <form id="myForm">
                                            
                                             <input type="text" id="name" name="name" placeholder="Enter Your name" required>
-                                          
+                                          <div>
+                                            <input type="email" id="email" name="email" placeholder="Enter Your email" required >
+                                            
+                                          </div>
                                       
-                                            <input type="email" id="email" name="email" placeholder="Enter Your email" required  data-toggle="popover" title="Modal Short Text" data-content="You gotta go through it to see there ain't nothing to it. Listen to the silence.">
-                                          
-                                          
                                             <input type="text" id="contact" name="contact" placeholder="Enter Your Contact Cell Number" required>
                                           
                                             <button type="button" onclick="validateForm()">CONTINUE</button>
@@ -180,12 +180,52 @@
                                           </div>
                                     </div>
                                 </div>
+                                <div class="accordition-item second">
+                                    <div class="accordition-header">
+                                        <h3>Your Company BBBEE Score Card Details</h3>
+                                        <span><img src="./assets/down-arrow.png" alt=""></span>
+                                    </div>
+                                </div>
+                                <div class="accordition-item second">
+                                    <div class="accordition-header">
+                                        <h3>Your Company Details</h3>
+                                        <span><img src="./assets/down-arrow.png" alt=""></span>
+                                    </div>
+                                </div>
+                                <div class="accordition-item second">
+                                    <div class="accordition-header">
+                                        <h3>Your Company's Financial Details</h3>
+                                        <span><img src="./assets/down-arrow.png" alt=""></span>
+                                    </div>
+                                </div>
+                                <div class="accordition-item second">
+                                    <div class="accordition-header">
+                                        <h3>Supplier Development Points</h3>
+                                        <span><img src="./assets/down-arrow.png" alt=""></span>
+                                    </div>
+                                </div>
+                                <div class="accordition-item second">
+                                    <div class="accordition-header">
+                                        <h3>Enterprise Development Points</h3>
+                                        <span><img src="./assets/down-arrow.png" alt=""></span>
+                                    </div>
+                                </div>
+                                <div class="accordition-item second">
+                                    <div class="accordition-header">
+                                        <h3>Socio-Economic Development Points</h3>
+                                        <span><img src="./assets/down-arrow.png" alt=""></span>
+                                    </div>
+                                </div>
+                                
     
                             </div>
-                            <div class="display-points accords">
-                                <div class="point-pc">
+                            <div class="point-pc accords">
+                                <div class=" display-points ">
                                     <h1>Your Points</h1>
                                     <p>0</p>
+                                </div>
+                                <div class="details">
+                                    <p>Your Details</p>
                                 </div>
                             </div>
                         </div>

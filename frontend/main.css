@@ -24,7 +24,7 @@
     padding-bottom: 32px 0;
     margin-bottom: 32px;
     padding: 16px;
-    display: none;
+  
 }
 .B-BBEE_disclaimer{
     background-color: #fff;
@@ -109,30 +109,55 @@
 .B-BBEE_div{
     margin-bottom: 30px;  
 }
+.hide{
+    display: none;
+}
 
 /* Calculating points */
 .B-BBEE-Points{
     width: 100%;
+    display: none;
 }
+
 .B-BBEE-wraper{
     display: flex;
 }
+.reveal{
+    display: block;
+}
+
 .accords{
     margin: 5px 0 20px 0;
-    border-radius: 5px;
+    border-radius: 7px;
 }
 .B-BBEE-form{
-    width: 65%;
-    background-color: white;
+    width: 70%;
 }
-.accordition-header{
-    color: #00638e;
+.accordition-item{
+    border-radius: 10px;
+    background-color: white;
+    color: #5c636a!important;
+}
+.accordition-headers{
+    color:#00638e;
     padding: 20px;
     display: flex;
     justify-content: space-between;
     border-bottom: 2px solid #00638e3a;
 }
-.accordition-header h3{
+.accordition-header{
+    color: #5c636a!important;
+    padding: 20px;
+    display: flex;
+    font-size: 14px;
+    font-weight: 400;
+    justify-content: space-between;
+   
+}
+.details{
+    color: #00638e;
+}
+.accordition-headers h3{
     font-weight: 200;
 }
 /* .accordition-header span{
@@ -143,12 +168,33 @@
     width: 25px;
    
 }
-.display-points{
-    width:35% ;
-    text-align: center;
+.accordition-headers img{
+    width: 25px;
+   
+}
+.second{
+    margin: 8px 0;
+
+}
+.point-pc{
+    width:30% ;
     background-color: white;
     margin-left: 20px;
     padding: 20px;
+    height: 400px!important;
+}
+.display-points{
+    color: #00638e;
+    text-align: center;
+}
+.display-points h1{
+    font-size: 35px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.display-points p{
+    font-size: 50px;
+    font-weight: 700;
 }
 
 form {
@@ -235,6 +281,57 @@ form {
     border-radius: 4px;
     cursor: pointer;
   }
+
+/* styling for the modal */
+.tooltip {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    display: inline-block;
+    border-bottom: 0px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+
+    /* Fade in tooltip */
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+/* Tooltip arrow */
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+
 
 
 /*Start of Digital Learning */

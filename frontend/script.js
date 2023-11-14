@@ -76,9 +76,18 @@ function closeModal() {
 //   }, 2000); // 2000 milliseconds (2 seconds) delay in this example
 // }
 
-$(document).ready(function() {
-  $('[data-toggle="popover"]').popover({
-     placement: 'top',
-     trigger: 'hover'
-  });
-});
+// $(document).ready(function() {
+//   $('[data-toggle="popover"]').popover({
+//      placement: 'top',
+//      trigger: 'hover'
+//   });
+// });
+
+const BEE_Cal = document.getElementById("B-BBEE_calculation")
+const BEE_Points = document.getElementById("B-BBEE-Points")
+const computeBtn = document.getElementById("compute-btn");
+
+computeBtn.addEventListener("click",()=>{
+  BEE_Cal.classList.toggle("hide")
+  BEE_Points.classList.toggle("reveal")
+})
