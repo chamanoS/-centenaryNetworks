@@ -11,7 +11,7 @@
 }
 
 .B-BBEE_background{
-    background-color: #0074A7;
+    background-color: #4a5568;
     margin: 10px 6px;
     padding: 16px;
     border-radius: 6px;
@@ -52,7 +52,7 @@
 .B-BBEE_calculation h4{
     display:flex ;
     justify-content: center;
-    color: #0074A7;
+    color: #4a5568;
     font:22.71px Poppins,sans-serif;
     margin:0px 0px 8px;
 }
@@ -74,7 +74,7 @@
     text-align: center;
 }
 .compute button{
-    background-color: #0074A7;
+    background-color: #4a5568;
     box-shadow: 0 3px 6px rgba(2,2,6,.46),
     1px 1px 6px rgba(2,2,3,.43);
     font-weight: 700;
@@ -360,7 +360,7 @@ form {
     margin: 0px 0px 24px;
 }
 span{
-    color: #0074A7;
+    color: #f47929;
 }
 .digital_learning_paragraph_1{
     color: #f47a29af;
@@ -393,7 +393,7 @@ span{
  .second_btn{
     margin: 4px 0px;
     padding: 6px 12px;
-    background-color: #00638e;
+    background-color: #4a5568;
 }
 .first_btn:hover{
     background-color: #00638e;
@@ -527,7 +527,7 @@ span{
 
 /* Start of revolution */
 .revolution{
-    background-color: #D1E8F3;
+    background-color: #939fa8;
     padding: 48px 8px;
     font-family:Poppins,sans-serif;
 }
@@ -540,14 +540,14 @@ span{
 .revolution_box h1{
     font-size: 36px;
     margin: 0px 0px 8px;
-    color: #414042;
+    color: #fff;
     text-align: center;
 }
 
 .revolution_box p{
     font-size: 16px;
     margin: 0px 0px 16px;
-    color: #414042;
+    color: #fff;
     text-align: center;
 }
 
@@ -567,7 +567,7 @@ span{
 }
 
 .revolution_img{
-    background-color: #0074A7; 
+    background-color: #4a556869; 
     border-radius: 12px;
     height: 124px !important;
     width:124px !important;
@@ -589,18 +589,18 @@ span{
 .revolution_text h2{
     font-size:32px;
     margin: 0px 0px 4px;
-    color: #414042; 
+    color: #fff; 
 }
 .revolution_text h5{
     font-size:20px;
     margin: 0px 0px 8px;
-    color: #0074A7;
+    color: #f47a29c0;
 }
 .revolution_text h6{
     font-size:14px;
     margin: 0px 0px 8px;
-    color: #414042;
-    font-weight: normal;
+    color: #c9c9c9;
+    font-weight: 400;
 }
 
 .revolution_group{
