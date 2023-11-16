@@ -91,3 +91,19 @@ computeBtn.addEventListener("click",()=>{
   BEE_Cal.classList.toggle("hide")
   BEE_Points.classList.toggle("reveal")
 })
+
+
+const inputFields = document.querySelectorAll('.input-field');
+const outputDiv = document.getElementById('output');
+const outputDiv2 = document.getElementById('output2');
+
+inputFields.forEach(inputField => {
+  inputField.addEventListener('input', () => {
+    const values = Array.from(inputFields)
+      .map(field => field.value)
+      .filter(value => value !== ''); 
+
+    outputDiv.textContent = values.length > 1 ? `(${values.join(', ')})` : values.join('');
+    outputDiv2.textContent = values.length > 1 ? `(${values.join(', ')})` : values.join('');
+  });
+});

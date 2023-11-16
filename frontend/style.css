@@ -97,6 +97,11 @@ a {
 .menu{
     display: block;
 }
+.error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 4px;
+  }
 
 .main-banner {
     min-height: 50vh;

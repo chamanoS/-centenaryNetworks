@@ -154,20 +154,24 @@
                         <div class="B-BBEE-wraper">
                             <div class="B-BBEE-form accords">
                                 <div class="accordition-item">
-                                    <div class="accordition-headers">
-                                        <h3>Your Details</h3>
-                                        <span><img src="./assets/arrow-up.png" alt=""></span>
+                                    <div class="for-border">
+                                        <div class="accordition-headers">
+                                            <h3>Your Details</h3>
+                                            <span><img src="./assets/arrow-up.png" alt=""></span>
+                                        </div>
+                                        <div id="output" class="output"></div>
                                     </div>
+                                   
                                     <div class="modal-form">
                                         <form id="myForm">
                                            
-                                            <input type="text" id="name" name="name" placeholder="Enter Your name" required>
+                                            <input type="text" id="name"  class="input-field" name="name" placeholder="Enter Your name" required>
                                           <div>
-                                            <input type="email" id="email" name="email" placeholder="Enter Your email" required >
+                                            <input type="email" id="email"  class="input-field" name="email" placeholder="Enter Your email" required >
                                             
                                           </div>
                                       
-                                            <input type="text" id="contact" name="contact" placeholder="Enter Your Contact Cell Number" required>
+                                            <input type="text" id="contact"  class="input-field" name="contact" placeholder="Enter Your Contact Cell Number" required>
                                           
                                             <button type="button" onclick="validateForm()">CONTINUE</button>
                                           </form>
@@ -226,6 +230,7 @@
                                 </div>
                                 <div class="details">
                                     <p>Your Details</p>
+                                    <p id="output2"></p>
                                 </div>
                             </div>
                         </div>
