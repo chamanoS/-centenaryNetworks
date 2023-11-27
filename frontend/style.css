@@ -186,6 +186,10 @@ a {
   }
 }
 
+.details{
+    padding: 20px 1px;
+}
+
 /* styling testimonials */
 /* .cards-holder{
     position: relative;

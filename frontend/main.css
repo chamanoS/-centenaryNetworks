@@ -468,20 +468,23 @@ form {
     display: flex;
     justify-content:flex-start;
     align-items: center;
-    padding: 40px;
+    padding: 10px 40px;
  }
 
 
  .company_btn input{
     padding: 20px;
+    width: 40%;
     border-radius: 5px;
     border: 1px solid #ced4da;
     margin-right: 15px;
  }
-
+.popup{
+    display: block;
+}
  .btn_c1{
     padding: 13px;
-    margin: 24px ;
+    /* margin: 24px ; */
     font-size: 1rem;
     color: #fff;
     background: #0074A7;

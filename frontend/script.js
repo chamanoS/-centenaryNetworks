@@ -60,28 +60,6 @@ function closeModal() {
 }
 
 
-// document.getElementById("email").addEventListener("mouseover", showHoverText);
-// document.getElementById("contact").addEventListener("mouseover", showHoverText);
-
-// // Function to show the hover text
-// function showHoverText() {
-//   var hoverText = document.createElement("div");
-//   hoverText.textContent = "Hello Tax Users";
-//   hoverText.classList.add("hover-text");
-//   this.parentNode.appendChild(hoverText);
-
-//   // Remove the hover text after a brief delay (you can adjust the delay as needed)
-//   setTimeout(function () {
-//     hoverText.remove();
-//   }, 2000); // 2000 milliseconds (2 seconds) delay in this example
-// }
-
-// $(document).ready(function() {
-//   $('[data-toggle="popover"]').popover({
-//      placement: 'top',
-//      trigger: 'hover'
-//   });
-// });
 
 const BEE_Cal = document.getElementById("B-BBEE_calculation")
 const BEE_Points = document.getElementById("B-BBEE-Points")
@@ -96,7 +74,6 @@ computeBtn.addEventListener("click",()=>{
 const inputFields = document.querySelectorAll('.input-field');
 const outputDiv = document.getElementById('output');
 const outputDiv2 = document.getElementById('output2');
-
 inputFields.forEach(inputField => {
   inputField.addEventListener('input', () => {
     const values = Array.from(inputFields)
@@ -105,6 +82,23 @@ inputFields.forEach(inputField => {
 
     outputDiv.textContent = values.length > 1 ? `(${values.join(', ')})` : values.join('');
     outputDiv2.textContent = values.length > 1 ? `(${values.join(', ')})` : values.join('');
+  });
+});
+
+
+const inputField = document.querySelectorAll('.input-fields');
+const outputDivs = document.getElementById('outputz');
+const outputDiv3 = document.getElementById('output3');
+console.log(inputField)
+console.log(outputDivs)
+inputField.forEach(inputFieldx => {
+  inputFieldx.addEventListener('input', () => {
+    const values = Array.from(inputField)
+      .map(field => field.value)
+      .filter(value => value !== ''); 
+
+    outputDivs.textContent = values.length > 1 ? `(${values.join(', ')})` : values.join('');
+    outputDiv3.textContent = values.length > 1 ? `(${values.join(', ')})` : values.join('');
   });
 });
 
@@ -156,5 +150,13 @@ arrowDown.addEventListener("click", () =>{
     
 // });
 
+// checkbox js
+const checkBx = document.getElementById("checkbox")
+const inputFrm = document.getElementById("Consultant_info")
+const checkboxDiv =document.getElementById("checkbox_btn")
 
+checkBx.addEventListener("click", ()=>{
+  inputFrm.classList.toggle("popup")
+  // inputFrm.style.display="block"
+})
   
