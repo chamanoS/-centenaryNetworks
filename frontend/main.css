@@ -873,12 +873,12 @@ span{
 .revolution_text h2{
     font-size:32px;
     margin: 0px 0px 4px;
-    color: #fff; 
+    color: #666; 
 }
 .revolution_text h5{
     font-size:20px;
     margin: 0px 0px 8px;
-    color: #ed8936;
+  color: #666;
 }
 .revolution_text h6{
     font-size:14px;
