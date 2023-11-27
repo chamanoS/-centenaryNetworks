@@ -184,6 +184,62 @@
                                           </div>
                                     </div>
                                 </div>
+
+                                <div class="accordition-item second">
+                                    <div class="for-border">
+                                        <div class="accordition-headers">
+                                            <h3>Your Company Details</h3>
+                                            <span><img src="./assets/down-arrow.png" alt=""></span>
+                                        </div>
+                                        <div id="outputs" class="output"></div>
+                                    </div>
+                                    
+
+                                    <div >
+                                        <div class="modal-form">
+                                        <form class="InputFieldsm ">
+                                            <div>
+                                                <input type="text" name="name" class="input-field" placeholder="Enter Company name" required>
+                                                <div>
+                                                    <input type="email" name="email" class="input-field" placeholder="Enter Company Address" required>
+                                                </div>
+                                            </div>
+                                            <div class="parent-checkbox">
+                                                <div class="checkbox_btn">
+                                                    <div class="ch_box" id="checkbox_btn">
+                                                        <input type="checkbox" id="checkbox">
+                                                    </div>
+                                                    <div class="checkbox_btn">
+                                                        <label> Are you an Odin BBBEE Consultant Partner?</label>
+                                                    </div>
+                                                </div>
+                                                <div class="continue_btn">
+                                                    <button type="button" onclick="validateForm()">CONTINUE</button>
+                                                </div>
+                                            </div>
+                                        
+                                            <div class="Consultant_container" id="Consultant_info">
+                                                <div class="company_btn">
+                                                    <input type="text" placeholder="Enter Consultant ID*">
+                                                    <button class="btn_c1">SUBMIT</button>
+                                                    <span>or</span>
+                                                    <button class="btn_c2">REGISTER NOW</button>
+                                                </div>
+                                            </div>
+                                        
+                                            
+                                        
+                                            <div class="modal" id="myModal">
+                                                <div class="modal-content">
+                                                    <p>Form submitted successfully!</p>
+                                                    <button class="close-btn" onclick="closeModal()">Close</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                        </div>
+                                   </div>
+
+                                </div>
                              
                                 <div class="accordition-item second">
                                     <div class="accordition-header">
@@ -243,61 +299,7 @@
                                 </div>
 
 
-                                <div class="accordition-item second">
-                                    <div class="for-border">
-                                        <div class="accordition-headers">
-                                            <h3>Your Company Details</h3>
-                                            <span><img src="./assets/down-arrow.png" alt=""></span>
-                                        </div>
-                                        <div id="outputs" class="output"></div>
-                                    </div>
-                                    
-
-                                    <div >
-                                        <div class="modal-form">
-                                        <form class="InputFieldsm ">
-                                            <div>
-                                                <input type="text" name="name" class="input-field" placeholder="Enter Company name" required>
-                                                <div>
-                                                    <input type="email" name="email" class="input-field" placeholder="Enter Company Address" required>
-                                                </div>
-                                            </div>
-                                            <div class="parent-checkbox">
-                                                <div class="checkbox_btn">
-                                                    <div class="ch_box" id="checkbox_btn">
-                                                        <input type="checkbox" id="checkbox">
-                                                    </div>
-                                                    <div class="checkbox_btn">
-                                                        <label> Are you an Odin BBBEE Consultant Partner?</label>
-                                                    </div>
-                                                </div>
-                                                <div class="continue_btn">
-                                                    <button type="button" onclick="validateForm()">CONTINUE</button>
-                                                </div>
-                                            </div>
-                                        
-                                            <div class="Consultant_container" id="Consultant_info">
-                                                <div class="company_btn">
-                                                    <input type="text" placeholder="Enter Consultant ID*">
-                                                    <button class="btn_c1">SUBMIT</button>
-                                                    <span>or</span>
-                                                    <button class="btn_c2">REGISTER NOW</button>
-                                                </div>
-                                            </div>
-                                        
-                                            
-                                        
-                                            <div class="modal" id="myModal">
-                                                <div class="modal-content">
-                                                    <p>Form submitted successfully!</p>
-                                                    <button class="close-btn" onclick="closeModal()">Close</button>
-                                                </div>
-                                            </div>
-                                        </form>
-                                        </div>
-                                   </div>
-
-                                </div>
+                                
                                 <div class="accordition-item second">
                                     <div class="accordition-header">
                                         <h3>Your Company's Financial Details</h3>
@@ -345,9 +347,55 @@
 
                                 </div>
                                 <div class="accordition-item second">
+                                    <div class="for-border">
                                     <div class="accordition-header">
                                         <h3>Supplier Development Points</h3>
                                         <span><img src="./assets/down-arrow.png" alt=""></span>
+                                    </div>
+                                    <div class="output"></div>
+                                    </div>
+                                    <div class="supplier-dev">
+                                        <div class="supplier-dev-block">
+                                            <div class="supplier-dev-l">
+                                                <p>Would you like Supplier Development <br> Points?</p>
+                                                <div class="supplier-btns">
+                                                    <button>YES</button>
+                                                    <button>NO</button>
+                                                </div>
+                                            </div>
+                                            <div class="supplier-dev-r">
+                                                <div class="supplier-img">
+                                                    <h4>by:</h4>
+                                                    <img src="./assets/Tsogang.png" alt="">
+                                                </div>
+                                                <p>Odin's Supplier Development Beneficiary</p>
+                                            </div>
+                                        </div>
+                                        <div class="supplier-block">
+                                            <p>What type of investment suits you?</p>
+                                            <div class="block-btns">
+                                                <button type="button">A GRANT</button>
+                                                <button type="button" disabled>A UNSECURED LOAN</button>
+                                                <button type="button" disabled>A SECURED LOAN</button>
+                                            </div>
+                                        </div>
+                                        <div class="supplier-amount">
+                                            <p>Amount</p>
+                                            <div class="sp-amount">
+                                                <div class="sp-amnt">
+                                                    <p>R</p>
+                                                    <input type="text" name="" id="">
+                                                </div>
+                                                <div class="sp-edit">
+                                                    <img src="./assets/edit.svg" alt="">
+                                                    <p>Edit</p>
+                                                </div>
+                                            </div>
+                                            <div class="supplier-next">
+                                                <button>Next</button>
+                                            </div>
+                                        </div>
+
                                     </div>
                                 </div>
                                 <div class="accordition-item second">

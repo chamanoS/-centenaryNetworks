@@ -974,3 +974,133 @@ span{
     text-align: center;
     margin: 40px 0px;
 }
+
+/* Supplier Development Points */
+.supplier-dev-block{
+    display: flex;
+    padding: 20px;
+}
+.supplier-dev-l{
+    padding: 10px;
+}
+.supplier-btns button{
+    padding: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 20px;
+    border-radius: 4px;
+    border-width:  0.01em;
+    border-color: #005e862a;
+}
+.supplier-btns :first-child{
+    margin-right: 20px;
+    background-color: #005d86;
+    color: white;
+}
+.supplier-btns :nth-child(2){
+    color: #005d86;
+}
+.supplier-btns :nth-child(2):hover{
+   background-color: #b8b8b8;
+}
+.supplier-dev-r{
+    border-left: 2px solid #ccc;
+    padding-left: 30px;
+    margin-left: 20px;
+}
+.supplier-dev-r p{
+    cursor: pointer;
+    font-size:13px ;
+    color: black;
+}
+.supplier-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.supplier-img img{
+    width: 250px;
+    height: auto;
+}
+.supplier-block{
+    padding: 10px;
+    padding-left: 30px;
+}
+.supplier-block p{
+    color: black;
+    padding-bottom: 10px;
+}
+.block-btns button{
+    padding: 10px;
+    color: #005d86;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.block-btns{
+    margin: 10px 0;
+}
+.block-btns :first-child{
+    padding: 10px 50px;
+    background-color: white;
+    border-color: #005e8652;
+}
+.block-btns :first-child:hover{
+    background-color: rgba(204, 204, 204, 0.349);
+}
+.block-btns :nth-child(2){
+    margin:0 20px ;
+}
+.block-btns :nth-child(2),.block-btns :nth-child(3){
+    background-color: rgba(128, 128, 128, 0.541);
+}
+.supplier-amount{
+    padding-left: 30px;
+    padding-bottom: 35px;
+}
+.supplier-amount p{
+    color: black;
+}
+.sp-amount{
+    display: flex;
+    margin-bottom: 10px;
+}
+.sp-amnt{
+    display: flex;
+    padding-top: 5px;
+}
+.sp-amnt p{
+    font-size: 22px;
+    margin-right: 5px;
+}
+.sp-amnt input{
+    padding: 10px;
+    border-radius: 5px;
+}
+.sp-edit{
+    display: flex;
+    padding: 7px;
+    margin-left: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.sp-edit img{
+    width: 20px;
+    height: auto;
+}
+.sp-edit p{
+    color:#0074A7;
+    font-size: 25px;
+    padding-left: 5px;
+}
+.supplier-next button{
+    margin-left: auto;
+    display: block;
+    padding-right: 20px;
+    padding: 10px;
+    color: #005d86;
+    cursor: pointer;
+    margin-right: 30px;
+    border-radius: 5px;
+    background-color: white;
+}
