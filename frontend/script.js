@@ -107,3 +107,54 @@ inputFields.forEach(inputField => {
     outputDiv2.textContent = values.length > 1 ? `(${values.join(', ')})` : values.join('');
   });
 });
+
+
+
+const arrowDown = document.getElementById("click-env");
+
+const cat = document.querySelector(".accordition_category_section");
+const cat_dw = document.querySelectorAll(".ct-box");
+const info = document.querySelector(".accordition_info")
+const close_box = document.querySelectorAll(".general")
+
+close_box.forEach(cl_box =>{
+  isClicked = false;
+  cl_box.addEventListener("click",()=>{
+    info.style.display = "none"
+
+    isClicked = true;
+    
+   
+    
+
+
+    })
+
+})
+
+console.log(isClicked)
+cat_dw.forEach(box => {
+  box.addEventListener("click", ()=>{
+    const sectors = document.querySelector(".accordition_sector_section")
+    sectors.style.display="block"
+  })
+})
+
+arrowDown.addEventListener("click", () =>{
+ cat.style.display = "block"
+})
+
+// // Get a reference to the button element
+// const button = document.getElementById('myButton');
+
+// // Initialize a variable to track the button state
+// let isClicked = false;
+
+// // Add a click event listener to the button
+// button.addEventListener('click', function() {
+//     // Update the state when the button is clicked
+    
+// });
+
+
+  

@@ -184,23 +184,165 @@
                                           </div>
                                     </div>
                                 </div>
+                             
                                 <div class="accordition-item second">
                                     <div class="accordition-header">
                                         <h3>Your Company BBBEE Score Card Details</h3>
-                                        <span><img src="./assets/down-arrow.png" alt=""></span>
+                                        <span><img src="./assets/arrow-up.png" alt="" id="click-env"></span>
                                     </div>
+                                    <div class="accordition_info_selected">
+                                        <div></div>
+                                    </div>
+                                    <div class="accordition_info">
+
+                                    <div class="accordition_category_section">
+                                      <p>What is your company's B-BBEE Category? </p>
+                                      <div class="accordition_cat">
+                                      <div class="sector_1">
+                                        <button class="Category_box ct-box" type="submit">Generic (R50 million <br>p/a)</button>
+                                        <button class="Category_dotted ct-box" type="submit">QSE (R 10 -50 million<br> p/a)</button>
+                                        <button class="Category_dotted general" type="submit">EME (R0 -10 million p/a)</button>
+                                     </div>
+                                    </div>
+                                    </div>
+
+                                      <div class="accordition_sector_section">
+                                        <p>Your B-BBEE Business Sector </p>  
+                                        <div class="accordition_sector">
+                                        <div class="sector_1">
+                                          <button class="Category_box general" type="submit">General</button>
+                                          <button class="Category_dotted general" type="submit">Automotive</button>
+                                          <button class="Category_dotted general" type="submit">Construction & Civil Engineering</button>
+                                        </div>
+
+                                        <div class="sector_1">
+                                          <button class="Category_dotted general" type="submit">Agriculture</button>
+                                          <button class="Category_dotted general" type="submit">ICT</button>
+                                          <button class="Category_dotted general" type="submit">Renewable</button>
+                                        </div>
+
+                                        <div class="sector_1">
+                                            <button class="Category_dotted general" type="submit">Financial Sector</button>
+                                            <button class="Category_dotted general" type="submit">Forestry</button>
+                                            <button class="Category_dotted general" type="submit">Property</button>
+                                          </div>
+
+                                          <div class="sector_1">
+                                            <button class="Category_dotted tour general" type="submit">Tourism</button>
+                                            <button class="Category_dotted general" type="submit">Marketing Advertising<br>and Communications</button>
+                                            <button class="Category_dotted general" type="submit">Chartered Accountancy<br>Sector Codes</button>
+                                          </div>
+
+                                         
+                                        </div>
+                                      </div>
+                                    </div>
+
+                                 
+                                   
                                 </div>
+
+
                                 <div class="accordition-item second">
-                                    <div class="accordition-header">
-                                        <h3>Your Company Details</h3>
-                                        <span><img src="./assets/down-arrow.png" alt=""></span>
+                                    <div class="for-border">
+                                        <div class="accordition-headers">
+                                            <h3>Your Company Details</h3>
+                                            <span><img src="./assets/down-arrow.png" alt=""></span>
+                                        </div>
+                                        <div id="outputs" class="output"></div>
                                     </div>
+                                    
+
+                                    <div >
+                                        <div class="modal-form">
+                                        <form class="InputFieldsm ">
+                                            <div>
+                                                <input type="text" name="name" class="input-field" placeholder="Enter Company name" required>
+                                                <div>
+                                                    <input type="email" name="email" class="input-field" placeholder="Enter Company Address" required>
+                                                </div>
+                                            </div>
+                                            <div class="parent-checkbox">
+                                                <div class="checkbox_btn">
+                                                    <div class="ch_box" id="checkbox_btn">
+                                                        <input type="checkbox" id="checkbox">
+                                                    </div>
+                                                    <div class="checkbox_btn">
+                                                        <label> Are you an Odin BBBEE Consultant Partner?</label>
+                                                    </div>
+                                                </div>
+                                                <div class="continue_btn">
+                                                    <button type="button" onclick="validateForm()">CONTINUE</button>
+                                                </div>
+                                            </div>
+                                        
+                                            <div class="Consultant_container" id="Consultant_info">
+                                                <div class="company_btn">
+                                                    <input type="text" placeholder="Enter Consultant ID*">
+                                                    <button class="btn_c1">SUBMIT</button>
+                                                    <span>or</span>
+                                                    <button class="btn_c2">REGISTER NOW</button>
+                                                </div>
+                                            </div>
+                                        
+                                            
+                                        
+                                            <div class="modal" id="myModal">
+                                                <div class="modal-content">
+                                                    <p>Form submitted successfully!</p>
+                                                    <button class="close-btn" onclick="closeModal()">Close</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                        </div>
+                                   </div>
+
                                 </div>
                                 <div class="accordition-item second">
                                     <div class="accordition-header">
                                         <h3>Your Company's Financial Details</h3>
                                         <span><img src="./assets/down-arrow.png" alt=""></span>
                                     </div>
+                                    <div class="empty_div"></div>
+                                    <div class="line">
+                                        <hr >
+                                    </div>
+
+
+                                    <div class="select_info">
+                                        <p>When is your Company's Financial Year End?</p>
+                                        
+                                        <select class="selector">
+                                            <option value="select">Select Financial Year End</option>
+                                            <option value="January">January</option>
+                                            <option value="February">February</option>
+                                            <option value="March">March</option>
+                                            <option value="January">April</option>
+                                            <option value="February">May</option>
+                                            <option value="March">June</option>
+                                            <option value="January">July</option>
+                                            <option value="February">August</option>
+                                            <option value="March">September</option>
+                                            <option value="January">October</option>
+                                            <option value="February">November</option>
+                                            <option value="March">December</option>
+                                        </select>
+
+                                        <label>What is your Company's projected NPAT for this Financial Year?</label>
+                                          
+                                        <div class="money_input">
+                                            <div class="money_box">
+                                               <span>R</span><input type="text" placeholder="Example : 300,000">
+                                           </div>
+                                             <div class="money_label">
+                                                *This will be the amount used to estimate BBBEE points benefit
+                                             </div>
+                                        </div>
+                                        <div class="continue_btn money_btn">
+                                            <button type="button" onclick="validateForm()">CONTINUE</button>
+                                          </div>
+                                    </div>
+
                                 </div>
                                 <div class="accordition-item second">
                                     <div class="accordition-header">
