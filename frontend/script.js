@@ -117,10 +117,6 @@ close_box.forEach(cl_box =>{
     info.style.display = "none"
 
     isClicked = true;
-    
-   
-    
-
 
     })
 
@@ -159,4 +155,14 @@ checkBx.addEventListener("click", ()=>{
   inputFrm.classList.toggle("popup")
   // inputFrm.style.display="block"
 })
-  
+
+
+const YesBtn = document.querySelector(".yes-btn");
+const NoBtn = document.querySelector(".no-btn");
+const displayDiv = document.querySelector(".displayer");
+
+NoBtn.addEventListener("click", ()=>{
+  displayDiv.classList.add("display-hide");
+
+})
+

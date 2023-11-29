@@ -1109,5 +1109,8 @@ span{
 }
 
 .displayer{
+    /* display: none; */
+}
+.display-hide{
     display: none;
 }
