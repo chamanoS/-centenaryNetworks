@@ -40,12 +40,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
 })
 
+const form = document.getElementById("myForm");
+const modalForm = document.getElementById("modal-form");
+const getArrowDown = document.getElementById("arrow-dwn");
+const arrowUps = document.querySelector(".up");
+const arrowDowns = document.querySelector(".down");
 
 function validateForm() {
-  const form = document.getElementById("myForm");
-  const modalForm = document.getElementById("modal-form");
-  const arrowUps = document.querySelector(".up");
-  const arrowDowns = document.querySelector(".down");
 
   if (form.checkValidity()) {
     form.parentElement.style.display = "none";
@@ -60,6 +61,14 @@ function validateForm() {
     });
   }
 }
+
+const getDetails = document.getElementById("yr-details")
+getArrowDown.addEventListener("click", ()=>{
+  getDetails.style.display = "block";
+  modalForm.style.display = "none";
+  arrowUps.style.display = "block";
+  arrowDowns.style.display = "none";
+})
 
 const BEE_Cal = document.getElementById("B-BBEE_calculation")
 const BEE_Points = document.getElementById("B-BBEE-Points")
