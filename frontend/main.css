@@ -230,8 +230,8 @@ form {
     transition: border-color 0.3s;
   }
  
-  .modal-form{
-    
+  .md-form{
+    display: none;
   }
   .modal-form input::placeholder {
     color: #006896; 

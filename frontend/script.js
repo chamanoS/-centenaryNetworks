@@ -43,9 +43,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
 function validateForm() {
   var form = document.getElementById("myForm");
+  const modalForm = document.getElementById("modal-form");
   if (form.checkValidity()) {
     // Form is valid, show modal
-    document.getElementById("myModal").style.display = "flex";
+    form.parentElement.style.display = "none";
+    modalForm.style.display = "block";
+
+    // document.getElementById("myModal").style.display = "flex";
+
   } else {
     // Form is invalid, highlight fields
     var inputs = form.querySelectorAll(":invalid");
@@ -156,10 +161,10 @@ checkBx.addEventListener("click", ()=>{
   // inputFrm.style.display="block"
 })
 
-
+//Toggling btns
 const YesBtn = document.querySelector(".yes-btn");
 const NoBtn = document.querySelector(".no-btn");
-const displayDiv = document.querySelector(".displayer");
+const displayDiv = document.querySelector(".supplier-dev");
 
 NoBtn.addEventListener("click", ()=>{
   displayDiv.classList.add("display-hide");
