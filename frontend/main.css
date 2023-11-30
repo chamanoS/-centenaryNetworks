@@ -233,6 +233,12 @@ form {
   .md-form{
     display: none;
   }
+  .down{
+    display: none;
+  }
+  .img-hover{
+    cursor: pointer;
+  }
   .modal-form input::placeholder {
     color: #006896; 
   }

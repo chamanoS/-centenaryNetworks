@@ -42,29 +42,24 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 function validateForm() {
-  var form = document.getElementById("myForm");
+  const form = document.getElementById("myForm");
   const modalForm = document.getElementById("modal-form");
+  const arrowUps = document.querySelector(".up");
+  const arrowDowns = document.querySelector(".down");
+
   if (form.checkValidity()) {
-    // Form is valid, show modal
     form.parentElement.style.display = "none";
     modalForm.style.display = "block";
-
-    // document.getElementById("myModal").style.display = "flex";
+    arrowUps.style.display = "none";
+    arrowDowns.style.display = "block";
 
   } else {
-    // Form is invalid, highlight fields
-    var inputs = form.querySelectorAll(":invalid");
+    const inputs = form.querySelectorAll(":invalid");
     inputs.forEach(function (input) {
       input.style.borderColor = "red";
     });
   }
 }
-
-function closeModal() {
-  document.getElementById("myModal").style.display = "none";
-}
-
-
 
 const BEE_Cal = document.getElementById("B-BBEE_calculation")
 const BEE_Points = document.getElementById("B-BBEE-Points")
