@@ -1,6 +1,10 @@
 *{
     margin: 0;
     padding: 0;
+
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
 }
 .faded-y{
     color:#f47a29af ;
@@ -11,7 +15,7 @@
 }
 
 .B-BBEE_background{
-    background-color: #4a5568;
+    /* background-color: #4a5568; */
     margin: 10px 6px;
     padding: 16px;
     border-radius: 6px;
@@ -30,7 +34,8 @@
     background-color: #fff;
     border: 3px solid #fff;
     border-radius: 6px;
-    margin-bottom: 16px;
+    margin-bottom: 130px;
+    margin-top: -130px!important;
     padding: 16px;
     color: #414042;
     padding-left: 20px;
@@ -65,6 +70,11 @@
     text-align: center !important;
     color: #414042;
 }
+.descr{
+    padding: 0 80px;
+    margin-bottom: 30px;
+    margin-top: -20px!important;
+}
 
 .B-BBEE_icons{
     display: flex;
@@ -74,9 +84,7 @@
     text-align: center;
 }
 .compute button{
-    background-color: #4a5568;
-    box-shadow: 0 3px 6px rgba(2,2,6,.46),
-    1px 1px 6px rgba(2,2,3,.43);
+    background-color: #f47929;
     font-weight: 700;
     color: white;
     border: none;
@@ -117,6 +125,10 @@
 .B-BBEE-Points{
     width: 100%;
     display: none;
+    margin: 10px 6px;
+    padding: 16px;
+    border-radius: 6px;
+    background-color: #4a5568;
 }
 
 .B-BBEE-wraper{
@@ -125,6 +137,8 @@
 .reveal{
     display: block;
 }
+
+
 
 .accords{
     margin: 5px 0 20px 0;
@@ -162,6 +176,14 @@
     justify-content: space-between;
    
 }
+
+.accordition-header h3{
+    color:#00638e ;
+    font-weight: 200;
+    font-size: 18.72px;
+}
+
+
 .details{
     color: #00638e;
 }
@@ -230,14 +252,8 @@ form {
     transition: border-color 0.3s;
   }
  
-  .md-form{
-    display: none;
-  }
-  .down{
-    display: none;
-  }
-  .img-hover{
-    cursor: pointer;
+  .modal-form{
+    
   }
   .modal-form input::placeholder {
     color: #006896; 
@@ -261,6 +277,18 @@ form {
   }
   .modal-form button:hover{
     background-color: #ced4da;
+  }
+  .cl-span{
+    color: white!important;
+  }
+  .md-form{
+    display: none;
+  }
+  .up{
+    display: none;
+  }
+  .img-hover{
+    cursor: pointer;
   }
   .hover-text {
     position: absolute;
@@ -535,7 +563,7 @@ form {
     cursor: pointer;
 
     border-color: #80bad3;
-    box-shadow: 0 0 0 0.25rem rgba(0,116,167,.25);
+    box-shadow: 0 0 0 3px rgba(0,116,167,.25);
     outline: 0;
    
  }
@@ -544,7 +572,6 @@ form {
     cursor: pointer;
     background-color:#d3d4d5;
  }
-
 
 
  /* End of Company Details */
@@ -809,7 +836,12 @@ span{
     margin: 0px 0px 16px;
     line-height: 20px;
 }
-
+.colrt{
+    color: #f76e13;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 50px;
+}
 .computer_msg img{
     width: 400px;
     margin: 24px 0px; 
@@ -817,9 +849,10 @@ span{
 
 /* Start of revolution */
 .revolution{
-    background-color: #939fa8;
+    background-color: #4a5568;
     padding: 48px 8px;
     font-family:Poppins,sans-serif;
+    margin-bottom: 70px;
 }
 
 .revolution_box{
@@ -830,14 +863,14 @@ span{
 .revolution_box h1{
     font-size: 36px;
     margin: 0px 0px 8px;
-    color: #666;
+    color: #e0e0e0;
     text-align: center;
 }
 
 .revolution_box p{
     font-size: 16px;
     margin: 0px 0px 16px;
-    color: #666;
+  color: #e0e0e0;
     text-align: center;
 }
 
@@ -879,17 +912,17 @@ span{
 .revolution_text h2{
     font-size:32px;
     margin: 0px 0px 4px;
-    color: #666; 
+    color: #e0e0e0;
 }
 .revolution_text h5{
     font-size:20px;
     margin: 0px 0px 8px;
-  color: #666;
+    color: #e0e0e0;
 }
 .revolution_text h6{
     font-size:14px;
     margin: 0px 0px 8px;
-    color: #666;
+    color: #a0a0a0;
     font-weight: 400;
 }
 
@@ -920,6 +953,7 @@ span{
 .social_impact_image img{
     max-width: 100%;
     height: auto;
+  
 }
 .social_impact_content{
     padding: 0px 24px;
@@ -993,7 +1027,7 @@ span{
     padding: 10px;
 }
 .supplier-btns button{
-    padding: 10px;
+    padding: 6px 12px;
     margin-top: 20px;
     cursor: pointer;
     font-weight: 500;
@@ -1004,11 +1038,20 @@ span{
 }
 .supplier-btns :first-child{
     margin-right: 20px;
-    background-color: #005d86;
-    color: white;
+    color:#0074A7;
+    background-color: #F8F9FA;
+    border-color: #80bad3;
+    box-shadow: 0 0 0 0.25rem rgba(0,116,167,.25);
+    outline: 0;
 }
+
+.supplier-btns :first-child:hover{
+   background-color: #d3d4d5;
+   
+}
+
 .supplier-btns :nth-child(2){
-    color: #005d86;
+    color: #0074A7;
 }
 .supplier-btns :nth-child(2):hover{
    background-color: #b8b8b8;
@@ -1035,6 +1078,7 @@ span{
 .supplier-block{
     padding: 10px;
     padding-left: 30px;
+
 }
 .supplier-block p{
     color: black;
@@ -1057,6 +1101,18 @@ span{
 .block-btns :first-child:hover{
     background-color: rgba(204, 204, 204, 0.349);
 }
+
+/* .block-btns :first-child:focus{
+    background-color: #005d86;
+    color: #fff;
+
+} */
+
+.bg_Color{
+    background-color: #005d86 !important;
+    color: #fff;
+}
+
 .block-btns :nth-child(2){
     margin:0 20px ;
 }
@@ -1066,6 +1122,7 @@ span{
 .supplier-amount{
     padding-left: 30px;
     padding-bottom: 35px;
+
 }
 .supplier-amount p{
     color: black;
@@ -1073,6 +1130,7 @@ span{
 .sp-amount{
     display: flex;
     margin-bottom: 10px;
+    
 }
 .sp-amnt{
     display: flex;
@@ -1081,10 +1139,14 @@ span{
 .sp-amnt p{
     font-size: 22px;
     margin-right: 5px;
+    margin-top: 5px;
 }
 .sp-amnt input{
-    padding: 10px;
-    border-radius: 5px;
+    padding: 8px;
+    border-radius: .375rem;
+    border: 1px solid #ced4da;
+    background-color: #E9ECEF;
+
 }
 .sp-edit{
     display: flex;
@@ -1099,20 +1161,35 @@ span{
 }
 .sp-edit p{
     color:#0074A7;
-    font-size: 25px;
+    font-size: 20px;
     padding-left: 5px;
+    cursor: pointer;
 }
 .supplier-next button{
     margin-left: auto;
     display: block;
     padding-right: 20px;
-    padding: 10px;
+    padding: 10px 20px;
     color: #005d86;
     cursor: pointer;
     margin-right: 30px;
     border-radius: 5px;
-    background-color: white;
+    background-color: #F8F9FA;
+    font-size: 13.333px;
+    text-transform: uppercase;
+    border: 1px solid #0074A7;
+
+    border-color: #80bad3;
+    box-shadow: 0 0 0 3px rgba(0,116,167,.25);
+    outline: 0;
+   
 }
+
+ .supplier-next button:hover{
+    cursor: pointer;
+    background-color:#d3d4d5;
+ }
+
 
 .displayer{
     /* display: none; */
@@ -1120,3 +1197,4 @@ span{
 .display-hide{
     display: none;
 }
+

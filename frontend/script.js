@@ -70,6 +70,8 @@ getArrowDown.addEventListener("click", ()=>{
   arrowDowns.style.display = "none";
 })
 
+
+
 const BEE_Cal = document.getElementById("B-BBEE_calculation")
 const BEE_Points = document.getElementById("B-BBEE-Points")
 const computeBtn = document.getElementById("compute-btn");
@@ -119,11 +121,13 @@ const cat = document.querySelector(".accordition_category_section");
 const cat_dw = document.querySelectorAll(".ct-box");
 const info = document.querySelector(".accordition_info")
 const close_box = document.querySelectorAll(".general")
+// const sectorbtn = document.querySelector(".Category_dotted")
 
 close_box.forEach(cl_box =>{
   isClicked = false;
   cl_box.addEventListener("click",()=>{
     info.style.display = "none"
+    // cl_box.style.backgroundColor="#005d86";
 
     isClicked = true;
 
@@ -162,16 +166,48 @@ const checkboxDiv =document.getElementById("checkbox_btn")
 
 checkBx.addEventListener("click", ()=>{
   inputFrm.classList.toggle("popup")
-  // inputFrm.style.display="block"
 })
 
-//Toggling btns
-const YesBtn = document.querySelector(".yes-btn");
-const NoBtn = document.querySelector(".no-btn");
-const displayDiv = document.querySelector(".supplier-dev");
 
-NoBtn.addEventListener("click", ()=>{
-  displayDiv.classList.add("display-hide");
 
-})
+//Supplier,Enterprise and socio-economic divs JS
+const grantbtn = document.querySelectorAll(".grantB");
+
+function contentHide(env){
+ const NoBtn = document.getElementById(env).parentElement.parentElement.parentElement.parentElement;
+ NoBtn.classList.add("display-hide");
+}
+
+
+function contentDisplay(event){
+  const YesButton = document.getElementById(event);
+  YesButton.style.backgroundColor="#005d86";
+  YesButton.style.color="#fff";
+  YesButton.style.boxShadow="none"
+
+ const YesBtn = document.getElementById(event).parentElement.parentElement.parentElement.nextElementSibling.firstElementChild;
+ YesBtn.classList.add("reveal");
+ YesBtn.classList.remove("display-hide")
+
+}
+
+
+function grantBtnDisplay(env){
+  const supplierbtn= document.getElementById(env);
+  supplierbtn.style.backgroundColor="#005d86";
+  supplierbtn.style.color="#fff";
+  
+  const grantButton = document.getElementById(env).parentElement.parentElement.nextElementSibling;
+  grantButton.classList.add("reveal");
+  grantButton.classList.remove("display-hide")
+}
+
+function removeDisabled(event){
+ const editBtn = document.getElementById(event).parentElement.previousElementSibling.firstElementChild.nextElementSibling
+ editBtn.disabled=false;
+ editBtn.style.boxShadow = "0 0 0 3px rgba(0,116,167,.25)";
+ editBtn.style.borderColor = "#80bad3";
+ 
+}
+
 

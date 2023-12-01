@@ -1,10 +1,10 @@
 
-@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+/* @import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
 *{
     margin: 0px;
     padding: 0px;
     font-family: 'Nunito Sans',Helvetica,Arial,Lucida,sans-serif;
-}
+} */
 
 /* Base styles for the navigation */
 .navigator {
@@ -22,6 +22,8 @@
     background-color: #1b202b;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+
+
 
 .navigator img {
     height: 50px; 
@@ -121,8 +123,8 @@ a {
     width: 35%;
 }
 .title{
-    font-size: 38px;
-    font-weight: 700;
+    font-size: 39px;
+    font-weight:700;
     margin-bottom: 30px;
 }
 .text p{
@@ -130,7 +132,8 @@ a {
     font-weight: 600;
 }
 .span-color{
-    font-size: 30px!important;
+    font-size: 28px!important;
+    
 
 }
 .verified{
@@ -158,6 +161,7 @@ a {
     padding-left: 80px;
     margin-right: 60px;
     font-size: 45px;
+    color: #4a5568;
 }
 .pt{
     margin-left: 5px;
@@ -251,9 +255,16 @@ a {
     width: 250px;
     height: 150px;
 }
+.card h3{
+    font-size: 31px;
+    margin-bottom: 10px;
+  
+}
 
 .card h5{
     margin-bottom: 25px;
+    font-size: 15px;
+    color: #4d4d4d;
 }
 .card p{
     color: #949494;

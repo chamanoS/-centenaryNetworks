@@ -28,9 +28,9 @@
                
                 <div class="collapse navbar-collapse" id="navbar-collapse">
                     <ul class="navbar-nav">
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                             <a class="nav-link" href="#" name="">About</a>
-                        </li>
+                        </li> -->
                         <li class="nav-item">
                             <a class="nav-link" name="B-BBEE_Cal">B-BBEE Calculator</a>
                         </li>
@@ -64,7 +64,7 @@
             <section class="main-banner">
                 <div class="container">
                     <div class="text">
-                        <h3 class="title mb-4">Socio-Economic Development <p class="span-color"> Empowering South African Businesses and Communities</p>
+                        <h3 class="title mb-4"> <span class="clort">Socio-Economic Development</span>  <p class="span-color"> Empowering South African Businesses and Communities</p>
                         </h3>
                         <h5></h5>
                         
@@ -99,33 +99,19 @@
                             <li class="list-slide">
                                 <img src="./assets/Logo_DFA.png" alt="">
                             </li>
-                            <li class="list-slide">
-                                <img src="./assets/Logo_Mary.png" alt="">
-                            </li>
+                           
                             <li class="list-slide">
                                 <img src="./assets/Logo_NewGX.png" alt="">
                             </li>
-                            <li class="list-slide">
-                                <img src="./assets/Logo_Pledge.png" alt="">
-                            </li>
-                            <li class="list-slide">
-                                <img src="./assets/Logo_Reggio.png" alt="">
-                            </li>
+                            
                             <li class="list-slide">
                                 <img src="./assets/SPS-logo6.png" alt="">
                             </li>
-                            <li class="list-slide">
-                                <img src="./assets/Gbitel1.png" alt="">
-                            </li>
+                            
                             <li class="list-slide">
                                 <img src="./assets/Inhance2.png" alt="">
                             </li>
-                            <li class="list-slide">
-                                <img src="./assets/Logo_OV3.png" alt="">
-                            </li>
-                            <li class="list-slide">
-                                <img src="./assets/Logo_RCL4.png" alt="">
-                            </li>
+                            
                             <li class="list-slide">
                                 <img src="./assets/Logo_Truda5.png" alt="">
                             </li>
@@ -163,7 +149,6 @@
                                                 <span><img class="up" src="./assets/arrow-up.png" alt=""></span>
                                                 <span><img class="down" id="arrow-dwn" src="./assets/down-arrow.png"  alt=""></span>
                                             </div>
-                                          
                                         </div>
                                         <div id="output" class="output"></div>
                                     </div>
@@ -178,10 +163,17 @@
                                           </div>
                                       
                                             <input type="text" id="contact"  class="input-field" name="contact" placeholder="Enter Your Contact Cell Number" required>
-                                          
+                                           <div class="continue_btn money_btn">
                                             <button type="button" onclick="validateForm()">CONTINUE</button>
+                                        </div>
                                           </form>
-                                         
+                                          
+                                          <div class="modal" id="myModal">
+                                            <div class="modal-content">
+                                              <p>Form submitted successfully!</p>
+                                              <button class="close-btn" onclick="closeModal()">Close</button>
+                                            </div>
+                                          </div>
                                     </div>
                                 </div>
 
@@ -189,8 +181,10 @@
                                     <div class="for-border">
                                         <div class="accordition-headers">
                                             <h3>Your Company Details</h3>
-                                            <span><img  src="./assets/down-arrow.png" alt=""></span>
-                                        
+                                            <div class="img-hover">
+                                                <span><img class="up" src="./assets/arrow-up.png" alt=""></span>
+                                                <span><img class="down" id="arrow-dwn" src="./assets/down-arrow.png"  alt=""></span>
+                                            </div>
                                         </div>
                                         <div id="outputz" class="output"></div>
                                     </div>
@@ -223,8 +217,11 @@
                                                 <div class="company_btn">
                                                     <input type="text" placeholder="Enter Consultant ID*">
                                                     <button class="btn_c1">SUBMIT</button>
+                                                    
                                                 </div>
                                             </div>
+                                        
+                                            
                                         
                                             <div class="modal" id="myModal">
                                                 <div class="modal-content">
@@ -235,12 +232,16 @@
                                         </form>
                                         </div>
                                    </div>
+
                                 </div>
                              
                                 <div class="accordition-item second">
                                     <div class="accordition-header">
                                         <h3>Your Company BBBEE Score Card Details</h3>
-                                        <span><img src="./assets/arrow-up.png" alt="" id="click-env"></span>
+                                        <div class="img-hover">
+                                            <span><img class="up" src="./assets/arrow-up.png" alt=""></span>
+                                            <span><img class="down" id="click-env" src="./assets/down-arrow.png"  alt=""></span>
+                                        </div>
                                     </div>
                                     <div class="accordition_info_selected">
                                         <div></div>
@@ -284,16 +285,25 @@
                                             <button class="Category_dotted general" type="submit">Marketing Advertising<br>and Communications</button>
                                             <button class="Category_dotted general" type="submit">Chartered Accountancy<br>Sector Codes</button>
                                           </div>
+
+                                         
                                         </div>
                                       </div>
                                     </div>
+
+                                 
                                    
                                 </div>
 
+
+                                
                                 <div class="accordition-item second">
                                     <div class="accordition-header">
                                         <h3>Your Company's Financial Details</h3>
-                                        <span><img src="./assets/down-arrow.png" alt=""></span>
+                                        <div class="img-hover">
+                                            <span><img class="up" src="./assets/arrow-up.png" alt=""></span>
+                                            <span><img class="down" id="arrow-dwn" src="./assets/down-arrow.png"  alt=""></span>
+                                        </div>
                                     </div>
                                     <div class="empty_div"></div>
                                     <div class="line">
@@ -301,7 +311,7 @@
                                     </div>
 
 
-                                    <div class="select_info">
+                                    <div class="select_info md-form">
                                         <p>When is your Company's Financial Year End?</p>
                                         
                                         <select class="selector">
@@ -340,40 +350,50 @@
                                     <div class="for-border">
                                     <div class="accordition-header">
                                         <h3>Supplier Development Points</h3>
-                                        <span><img src="./assets/down-arrow.png" alt=""></span>
+                                        <div class="img-hover">
+                                            <span><img class="up" src="./assets/arrow-up.png" alt=""></span>
+                                            <span><img class="down" id="arrow-dwn" src="./assets/down-arrow.png"  alt=""></span>
+                                        </div>
                                     </div>
                                     <div class="output"></div>
                                     </div>
-                                    <div class="supplier-dev">
+                                    <div class="supplier-dev md-form" id="supplierbtns" >
                                         <div class="supplier-dev-block">
                                             <div class="supplier-dev-l">
                                                 <p>Would you like Supplier Development <br> Points?</p>
                                                 <div class="supplier-btns">
-                                                    <button class="yes-btn">YES</button>
-                                                    <button class="no-btn">NO</button>
+                                                    <button class="yes-btn" id="yesbtn_1" onclick="contentDisplay(id)">YES</button>
+                                                    <button class="no-btn" id="nobtn_1" onclick="contentHide(id)">NO</button>
                                                 </div>
                                             </div>
-    
+                                            <!-- <div class="supplier-dev-r">
+                                                <div class="supplier-img">
+                                                    <h4>by:</h4>
+                                                    <p>Odin's Supplier Development Beneficiary</p>
+                                                </div>
+                                                
+                                            </div> -->
                                         </div>
+
                                         <div class="displayer">
-                                            <div class="supplier-block">
+                                            <div class="supplier-block display-hide " id="buttonDiv">
                                                 <p>What type of investment suits you?</p>
                                                 <div class="block-btns">
-                                                    <button type="button">A GRANT</button>
+                                                    <button type="button" id="grantbtn_1" onclick="grantBtnDisplay(id)" class="grantB">A GRANT</button>
                                                     <button type="button" disabled>A UNSECURED LOAN</button>
                                                     <button type="button" disabled>A SECURED LOAN</button>
                                                 </div>
                                             </div>
-                                            <div class="supplier-amount">
+                                            <div class="supplier-amount display-hide">
                                                 <p>Amount</p>
                                                 <div class="sp-amount">
                                                     <div class="sp-amnt">
                                                         <p>R</p>
-                                                        <input type="text" name="" id="">
+                                                        <input type="text" name="" id="" placeholder="Example: 300,000" disabled>
                                                     </div>
                                                     <div class="sp-edit">
                                                         <img src="./assets/edit.svg" alt="">
-                                                        <p>Edit</p>
+                                                        <p id="edit_btn1" onclick="removeDisabled(id)">Edit</p>
                                                     </div>
                                                 </div>
                                                 <div class="supplier-next">
@@ -382,19 +402,114 @@
                                             </div>
                                         </div>
                                       
-
                                     </div>
                                 </div>
+
+
                                 <div class="accordition-item second">
+                                    <div class="for-border">
                                     <div class="accordition-header">
                                         <h3>Enterprise Development Points</h3>
-                                        <span><img src="./assets/down-arrow.png" alt=""></span>
+                                        <div class="img-hover">
+                                            <span><img class="up" src="./assets/arrow-up.png" alt=""></span>
+                                            <span><img class="down" id="arrow-dwn" src="./assets/down-arrow.png"  alt=""></span>
+                                        </div>
+                                    </div>
+                                    <div class="output"></div>
+                                </div>
+                                    
+                                    <div class="supplier-dev md-form" id="Enterprisebtns">
+                                        <div class="supplier-dev-block">
+                                            <div class="supplier-dev-l">
+                                                <p>Would you like Supplier Development <br> Points?</p>
+                                                <div class="supplier-btns">
+                                                    <button class="yes-btn" id="yesbtn_2" onclick="contentDisplay(id)">YES</button>
+                                                    <button class="no-btn" id="nobtn_2" onclick="contentHide(id)">NO</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+
+                                        <div class="displayer">
+                                            <div class="supplier-block display-hide ">
+                                                <p>What type of investment suits you?</p>
+                                                <div class="block-btns">
+                                                    <button type="button" id="grantbtn_2" onclick="grantBtnDisplay(id)" class="grantB">A GRANT</button>
+                                                    <button type="button" disabled>A UNSECURED LOAN</button>
+                                                    <button type="button" disabled>A SECURED LOAN</button>
+                                                </div>
+                                            </div>
+                                            <div class="supplier-amount display-hide">
+                                                <p>Amount</p>
+                                                <div class="sp-amount">
+                                                    <div class="sp-amnt">
+                                                        <p>R</p>
+                                                        <input type="text" name="" id="" placeholder="Example: 300,000" disabled>
+                                                    </div>
+                                                    <div class="sp-edit">
+                                                        <img src="./assets/edit.svg" alt="">
+                                                        <p id="edit_btn2" onclick="removeDisabled(id)">Edit</p>
+                                                    </div>
+                                                </div>
+                                                <div class="supplier-next">
+                                                    <button>Next</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                      
                                     </div>
                                 </div>
+
+
+
                                 <div class="accordition-item second">
+                                    <div class="for-border">
                                     <div class="accordition-header">
                                         <h3>Socio-Economic Development Points</h3>
-                                        <span><img src="./assets/down-arrow.png" alt=""></span>
+                                        <div class="img-hover">
+                                            <span><img class="up" src="./assets/arrow-up.png" alt=""></span>
+                                            <span><img class="down" id="arrow-dwn" src="./assets/down-arrow.png"  alt=""></span>
+                                        </div>                    
+                                    </div>
+                                    <div class="output"></div>
+                                </div>
+                                    <div class="supplier-dev md-form" id="sociobtns">
+                                        <div class="supplier-dev-block">
+                                            <div class="supplier-dev-l">
+                                                <p>Would you like Supplier Development <br> Points?</p>
+                                                <div class="supplier-btns">
+                                                    <button class="yes-btn" id="yesbtn_3" onclick="contentDisplay(id)">YES</button>
+                                                    <button class="no-btn" id="nobtn_3" onclick="contentHide(id)">NO</button>
+                                                </div>
+                                            </div>
+                                            <!-- <div class="supplier-dev-r">
+                                                <div class="supplier-img">
+                                                    <h4>by:</h4>
+                                                    <p>Odin's Supplier Development Beneficiary</p>
+                                                </div>
+                                                
+                                            </div> -->
+                                        </div>
+
+                                        <div class="displayer">
+                                            <div class="supplier-amount display-hide">
+                                                <p>Amount</p>
+                                                <div class="sp-amount">
+                                                    <div class="sp-amnt">
+                                                        <p>R</p>
+                                                        <input type="text" name="" id="" placeholder="Example: 300,000" disabled>
+                                                    </div>
+                                                    <div class="sp-edit">
+                                                        <img src="./assets/edit.svg" alt="">
+                                                        <p id="edit_btn3" onclick="removeDisabled(id)">Edit</p>
+                                                    </div>
+                                                </div>
+                                                <div class="supplier-next">
+                                                    <button>Next</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                      
                                     </div>
                                 </div>
                                 
@@ -418,116 +533,14 @@
                        
                     </div>
 
-                    <div class="B-BBEE_disclaimer">
-                        <h5><b>Disclaimer</b></h5>
-                        <p>All of our B-BBEE partner companies are VAT registered entities, and where applicable, VAT is EXCLUDED from this proposal.
-
-                        </p>
-                        <p>As per the guidelines of Section 18A of the Income Tax Act, Omang Foundation NPC cannot issue
-                            a tax
-                            invoice for donations if a S18A certificate is required</p>
-                        <p>The generated proposal and any eligible points calculated by our online B-BBEE tool are not a
-                            guarantee
-                            that all eligible points will be achieved by you..</p>
-                        <p>The points are an approximation of the potential points that could be earned by you dependent
-                            on your
-                            unique circumstances, any points that you are currently already earning, and
-                            your current B-BBEE setup.
-                        </p>
-                        <p><b>Although every effort has been made by us to ensure the accuracy of our online B-BBEE
-                                tool, we,
-                                Jendamark Automation (Pty) Ltd, accept no liability in respect of any
-                                errors contained therein, and under no circumstances will we be liable for any loss or
-                                damages
-                                whatsoever arising from the use of this tool.</b>
-                        </p>
-                    </div>
-                </div>
-            </section>
-<!-- 
-            <section class="digital_learning" id="digitalLearning">
-                <div class="digital_learning_paragraph">
-                    <h1><b>HM Pitje Foundation <span class="text-primary">Digital Learning</span></b> </h1>
-                    <p>
-                        <b>Looking to make a meaningful impact on education while improving your B-BBEE scorecard?</b>
-                    </p>
-                    <p class="digital_learning_paragraph_1">
-                        With HM Pitje Foundation Ecosystem, your company can do both.
-                    </p>
-                    <p>
-                        When you collaborate with HM Pitje Foundation Ecosystem, we make<b> earning B-BBEE points easier</b>
-                        with our
-                        carefully
-                        planned methodology and easy-to-use B-
-                        BBEE application. Our innovative solutions ensure you perform the least amount of work while
-                        having the
-                        highest impact, enabling you to focus on driving
-                        real change in education, whilst focussing on your day job!
-                    </p>
-                    <p>
-                        Our cutting-edge technology creates a digital ecosystem that delivers personalized education
-                        resources
-                        to learners while enabling real-time impact tracking
-                        for our partners. By <b>investing </b>in our platform, your company not only<b> gain a
-                            competitive
-                            B-BBEE</b> edge (reducing costs), but you also make a tangible social
-                        impact in underprivileged communities.
-                    </p>
-                    <p>
-                        Join our mission to empower education and transform lives, with over 3000 students in
-                        underprivileged
-                        schools, already benefiting from our innovative HM Pitje Foundation
-                        Education Ecosystem.
-                    </p>
-                    <div class="btns">
-                        <a href="https://calendly.com/requestacallback/15min?month=2023-10" class="first_btn">Request a
-                            call
-                            back</a>
-                        <a href="#" class="second_btn">Calculate your b-bbee</a>
-                    </div>
+                   
                 </div>
             </section>
 
-            <section class="Training">
-                <div class="Training_div1">
-                    <div class="Training_div2">
-                        <div class="Training_img1">
-                            <div class="Training_learners">
-                                <img src="./assets/edu1.jpg" alt="picture of learners" width="200px">
-                            </div>
-                            <div class="Training_Omang">
-                                <h4>OMANG ED-TECH</h4>
-                                <h6>HM Pitje Foundation Ecosystem allows underprivileged learners with no access to digital
-                                    resource
-                                </h6>
-                            </div>
-                        </div>
-                        <div class="Training_img2">
-                            <div class="Training_tablet">
-                                <img src="./assets/edu2.jpg" alt="picture of tablet" width="200px">
-                            </div>
-                            <div class="Training_content">
-                                <h4>TRAINING</h4>
-                                <h6>Teachers, learners and parents receive training on how to correctly adopt the
-                                    technology
-                                    within
-                                    the classroom, home and beyond.
-                                </h6>
-                            </div>
-                        </div>
-                    </div>
-                    <P class="Training_p">With our dedicated team by your side, you can rest assured that your
-                        investment in
-                        education is
-                        delivering real results.
-                    </P>
-                </div>
-            </section> 
--->
             <section class="computer">
                 <div class="computer_content">
                     <div class="computer_pic">
-                        <img src="./assets/computer1.png" alt="computer" ;>
+                        <img src="./assets/invest.png" alt="computer" ;>
                     </div>
                     <div class="computer_msg">
                         <h1><b>Monitor your<br><span class="text-primary">CSI Investment Impact</span></b></h1>
@@ -545,17 +558,17 @@
                     </div>
                 </div>
             </section>
-
-            <section class="revolution">
+           
+            <!-- <section class="revolution">
                 <div class="revolution_box">
                     <h1>Revolutionising Education</h1>
-                    <p><b>Discover how we are making a difference in<span > SA schools and Education.</span></b></p>
+                    <p><b>Discover how we are making a difference in SA schools and Education.</b></p>
 
                     <div class="revolution_divs">
                         <div class="revolution_group">
                             <div class="revolution_icons">
                                 <div class="revolution_img">
-                                    <img src="./assets/icon.svg" alt="icon 1">
+                                    <img src="./assets/icon2.png" alt="icon 1">
                                 </div>
                                 <div class="revolution_text">
                                     <h2><b>3,150</b></h2>
@@ -569,7 +582,7 @@
 
                             <div class="revolution_icons">
                                 <div class="revolution_img">
-                                    <img src="./assets/icon2.svg" alt="icon 2">
+                                    <img src="./assets/icon3.png" alt="icon 2">
                                 </div>
                                 <div class="revolution_text">
                                     <h2><b>6</b></h2>
@@ -584,7 +597,7 @@
                         <div class="revolution_group">
                             <div class="revolution_icons">
                                 <div class="revolution_img">
-                                    <img src="./assets/icon3.svg" alt="icon 3">
+                                    <img src="./assets/icon_2.png" alt="icon 3">
                                 </div>
                                 <div class="revolution_text">
                                     <h2><b>18</b></h2>
@@ -597,7 +610,7 @@
 
                             <div class="revolution_icons">
                                 <div class="revolution_img">
-                                    <img src="./assets/icon2.svg" alt="icon 4">
+                                    <img src="./assets/icon.png" alt="icon 4">
                                 </div>
                                 <div class="revolution_text">
                                     <h2><b>133,000+</b></h2>
@@ -611,14 +624,15 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> -->
 
             <section class="social_impact">
                 <div class="social_impact_container">
                     <div class="social_impact_image">
                         
-                        <a href="https://youtu.be/UtVMuZ6DPFc" target="_blank"><img src="./assets/video.png"
-                                alt="video poster picture"></a>
+                        <a href="https://www.youtube.com/watch?v=cHHrmRYdxhE" target="_blank">
+                            <img src="./assets/hmp.png" alt="video poster picture">
+                        </a>
                     </div>
                     <div class="social_impact_content">
                         <div class="social_impact_text">
@@ -626,11 +640,8 @@
                             <p class="p1"> <b>We partner with like minded organisations to complete the HM Pitje Foundation
                                     Education ecosystem.
                             </b></p>
-                            <p>We work alongside forward-thinking organisations such as Sage, VW, Standard Bank
-                                and Anglo,
-                                whose priority is to make a tangible, scalable and sustainable social impact
-                                through
-                                transforming education.</p>
+                            <p>We work alongside forward-thinking organisations whose priority is to make a tangible, scalable and sustainable social impact
+                                through transforming education.</p>
                             <p>A measurable and sustainable B-BBEE or CSI budget can be made by any company, no
                                 matter how large or small</p>
                             <div class="btns">
@@ -647,42 +658,52 @@
             <section class="main-card-wrapper">
                 <div class="cards-holder holder">
                 <div class="card-titles centers">
-                    <h1>What Our <span class="text-primary">Investors </span>Say</h1>
-                    <p>Investers and Clients share their experience with HM Pitje Foundation.</p>
+                    <h1> <span class="text-primary">HM Pitjie </span>Foundation</h1>
+                    <p>A Flame That Never Fades.</p>
                 </div>
                 <div class="card-wraper">
                     <div class="card">
-                        <img src="./assets/vuma.jpeg" alt="">
-                        <h3>Dali Dali</h3>
-                        <h5>- Senior Executive</h5>
-                        <p>“With direct line of sight, metrics and continuous engagement analytics that HM Pitje Foundation provides,
-                            we now know the impact of our investment on kids who had no previous access to online
-                            resources augmenting and enhancing their education whilst developing their talents at the
-                            same time.
+                        <!-- <img src="./assets/vuma.jpeg" alt=""> -->
+                        <h3>Tech Academy</h3>
+                        <h5>Data Science Certificates, short courses in
+                            IT Support, UX Design, Digital Marketing,
+                            Ecommerce & Ai.</h5>
+                        <p>The Foundation aims to empower 10,000 learners with computer science skills to prepare them
+                            for the 'Jobs of the Future.' Leading companies such as Google, IBM, and Microsoft offer free
+                            online courses in Data Analytics, and the Foundation is facilitating access to these
+                            transformative opportunities for communities that might otherwise miss out.
+                        </p><br>
+                        <p>We support our communities by providing the necessary tools for accessing these opportunities, having already
+                            acquired 250 tablets and planning additional laptop procurements, recognizing that not all
+                            programs can be effectively learned on tablets alone.
                         </p>
 
                     </div>
                     <div class="card">
-                        <img src="./assets/CN Logos-04.jpg" alt="">
-                        <h3>Zowie Dludlu</h3>
-                        <h5>- Manager CFO</h5>
-                        <p>“With direct line of sight, metrics and continuous engagement analytics that HM Pitje Foundation provides,
-                            we now know the impact of our investment on kids who had no previous access to online
-                            resources augmenting and enhancing their education whilst developing their talents at the
-                            same time.</p>
-                        <p>“With direct line of sight, metrics and continuous engagement analytics that HM Pitje Foundation provides,
-                            we now know the impact of our investment on kids who had no previous access to online
-                            resources augmenting and enhancing their education whilst developing their talents at the
-                            same time.</p>
+                       
+                        <h3>Soccer Academy</h3>
+                        <h5>Soccer Couching Skills & learners, girls as well as boys, soccer skills</h5>
+                        <p>Collaborating with the Department of Education and the University of Pretoria, we
+                            offer coaching, mentoring, and establish pathways for aspiring sports icons. Our
+                            goal extends beyond merely developing athletes; we aim to cultivate well-rounded
+                            individuals and community influencers.
+                            </p><br>
+                        <p>We sponsor opportunities for youth coaches to attain qualifications as CAF
+                            professionals and subsequently place them in our adopted schools. Here, they
+                            engage in training our learners through the Icons Cup program and Soccer
+                            Academy. This not only benefits the learners but also provides the coaches with the
+                            work experience necessary for potential placement as assistant coaches on
+                            professional teams</p>
                     </div>
                     <div class="card">
-                        <img src="./assets/CMS_New_Logo.png" alt="">
-                        <h3>Dakalo Mpofu</h3>
-                        <h5>- Managing Director</h5>
-                        <p>“With direct line of sight, metrics and continuous engagement analytics that HM Pitje Foundation provides,
-                            we now know the impact of our investment on kids who had no previous access to online
-                            resources augmenting and enhancing their education whilst developing their talents at the
-                            same time.</p>
+                        <h3>Arts And Culture</h3>
+                        <h5>We support the Arts through workshops where the Youth learn the different opportunities.</h5>
+                        <p>We seek out youth who come from disadvantage backgrounds who have either excelled or
+                            show promise in their chosen arts trade or business and offer them the tools they need to
+                            better succeed. <br><br> From funding to buy material, to technology equipment to enhance like we did
+                            with Atteridgeville’s township classical music school, CAYA to offering grants to youth Curators
+                            who promote young unknown South African artists abroad, immediately increasing the value of
+                            their art works, like Undiscovered Canvas. </p>
                     </div>
 
                    <!--  <div class="card">
@@ -760,15 +781,16 @@
                             <h3>How does HM Pitje Foundation help me earn points on my scorecard?</h3>
                             <span class="span"><img src="./assets/arrow-up.png" alt=""></span>
                             <span class="span-down" style="display: none;"><img src="./assets/down-arrow.png" alt=""></span>
-                            
-                        </div>
-                        <div class="main-dropdown" id="collapse_2">
-                            <div class="dropdown-collapse" >
-                                <span class="span-img"><img src="./assets/earn.png"alt=""></span>
-                                <p>HM Pitje Foundation is able to assist you in earning points in three of the components of your B-BBEE scorecard; Enterprise Development, Supplier Development and Socio-economic Development. Our organisation has built an ecosystem with partners in each of these areas who contribute to the overall impact of your investment. Our partners are Polelo Unlimited (Enterprise Development), Tsogang (Supplier Development) and Omang Foundation (Socio-economic Development. Learn more about these collaborations here.</p>
                             </div>
-                        </div>
-                        
+                            <div class="main-dropdown" id="collapse_2">
+                                <div class="dropdown-collapse">
+                                    <span class="span-img"><img src="./assets/earn.png" alt=""></span>
+                                    <p>HM Pitje Foundation is able to assist you in earning points in three of the components of your B-BBEE
+                                        scorecard; Enterprise Development, Supplier Development and Socio-economic Development. Our organisation has
+                                        built an ecosystem with partners in each of these areas who contribute to the overall impact of your
+                                        investment. Learn more about these collaborations here.</p>
+                                </div>
+                            </div>
                     </div>
 
                     <div class="dropdown-item">
@@ -780,8 +802,9 @@
                         </div>
                         <div class="main-dropdown" id="collapse_3">
                             <div class="dropdown-collapse">
-                                <span class="span-img"><img src="./assets/complete.png"alt=""></span>
-                                <p>Our system will automatically generate an obligation-free, customised quotation and complete audit pack which meets your specific B-BBEE needs. All this in just 5 minutes!</p>
+                                <span class="span-img"><img src="./assets/complete.png" alt=""></span>
+                                <p>Our system will automatically generate an obligation-free, customised quotation and complete audit pack which
+                                    meets your specific B-BBEE needs. All this in just 5 minutes!</p>
                             </div>
                         </div>
                        
@@ -795,8 +818,10 @@
                         </div>
                         <div class="main-dropdown" id="collapse_4">
                             <div class="dropdown-collapse">
-                                <span class="span-img"><img src="./assets/complete.png"alt=""></span>
-                                <p>Our friendly Impact Consultants will call you within the next business day to discuss how you wish to make an impact using our Education Ecosystem, as well as discuss your various PR opportunities and media options for the launch event that are included in our service.</p>
+                                <span class="span-img"><img src="./assets/complete.png" alt=""></span>
+                                <p>Our friendly Impact Consultants will call you within the next business day to discuss how you wish to make an
+                                    impact using our Education Ecosystem, as well as discuss your various PR opportunities and media options for
+                                    the launch event that are included in our service.</p>
                             </div>
                         </div>
                        
@@ -811,8 +836,11 @@
                         </div>
                         <div class="main-dropdown" id="collapse_5">
                             <div class="dropdown-collapse">
-                                <span class="span-img"><img src="./assets/complete.png"alt=""></span>
-                                <p>Absolutely! HM Pitje Foundation works with client companies to assess, deploy and maintain our education solution using technology, in the community of choice for our client. We believe that only through companies having a vested interest in the growth and development of their own communities can we truly achieve sustainable transformation for all.</p>
+                                <span class="span-img"><img src="./assets/complete.png" alt=""></span>
+                                <p>Absolutely! HM Pitje Foundation works with client companies to assess, deploy and maintain our education
+                                    solution using technology, in the community of choice for our client. We believe that only through companies
+                                    having a vested interest in the growth and development of their own communities can we truly achieve
+                                    sustainable transformation for all.</p>
                             </div>
                         </div>
                        
@@ -826,8 +854,11 @@
                         </div>
                         <div class="main-dropdown" id="collapse_6">
                             <div class="dropdown-collapse">
-                                <span class="span-img"><img src="./assets/complete.png"alt=""></span>
-                                <p>HM Pitje Foundation provides you with a complete audit pack based on your requirements identified when using our B-BBEE Online Tool. Not only does this pack include all the documentation you need to successfully pass your audit, but it is sent to you within 5 minutes, never has it been this quick or this easy! Documentation that is provided includes:</p>
+                                <span class="span-img"><img src="./assets/complete.png" alt=""></span>
+                                <p>HM Pitje Foundation provides you with a complete audit pack based on your requirements identified when using
+                                    our B-BBEE Online Tool. Not only does this pack include all the documentation you need to successfully pass
+                                    your audit, but it is sent to you within 5 minutes, never has it been this quick or this easy! Documentation
+                                    that is provided includes:</p>
                             </div>
                         </div>
                        
@@ -841,8 +872,9 @@
                         </div>
                         <div class="main-dropdown" id="collapse_7">
                             <div class="dropdown-collapse">
-                                <span class="span-img"><img src="./assets/complete.png"alt=""></span>
-                                <p>Within 5 minutes from your completion of the online B-BBEE Tool, we will send you an obligation-free quote, along with the draft audit pack containing the required documents as per your assessment.</p>
+                                <span class="span-img"><img src="./assets/complete.png" alt=""></span>
+                                <p>Within 5 minutes from your completion of the online B-BBEE Tool, we will send you an obligation-free quote,
+                                    along with the draft audit pack containing the required documents as per your assessment.</p>
                             </div>
                         </div>
                        
@@ -856,8 +888,9 @@
                         </div>
                         <div class="main-dropdown" id="collapse_8">
                             <div class="dropdown-collapse">
-                                <span class="span-img"><img src="./assets/complete.png"alt=""></span>
-                                <p>If you choose to accept the quote, one of our friendly impact consultants will call you within the next business day to discuss your impact options using our HM Pitje Foundation Ecosystem.</p>
+                                <span class="span-img"><img src="./assets/complete.png" alt=""></span>
+                                <p>If you choose to accept the quote, one of our friendly impact consultants will call you within the next
+                                    business day to discuss your impact options using our HM Pitje Foundation Ecosystem.</p>
                             </div>
                         </div>
                        
@@ -871,8 +904,11 @@
                         </div>
                         <div class="main-dropdown" id="collapse_9">
                             <div class="dropdown-collapse">
-                                <span class="span-img"><img src="./assets/complete.png"alt=""></span>
-                                <p>HM Pitje Foundation has a passionate and skilled team of Marketing professionals who take the PR burden of showcasing your investment off your shoulders. Leave it to us and we will take care of planning the launch event (symbolic handover), press releases, media outreach, social media campaigns and marketing value measurement.</p>
+                                <span class="span-img"><img src="./assets/complete.png" alt=""></span>
+                                <p>HM Pitje Foundation has a passionate and skilled team of Marketing professionals who take the PR burden of
+                                    showcasing your investment off your shoulders. Leave it to us and we will take care of planning the launch
+                                    event (symbolic handover), press releases, media outreach, social media campaigns and marketing value
+                                    measurement.</p>
                             </div>
                         </div>
                        
@@ -886,8 +922,10 @@
                         </div>
                         <div class="main-dropdown" id="collapse_10">
                             <div class="dropdown-collapse">
-                                <span class="span-img"><img src="./assets/complete.png"alt=""></span>
-                                <p>We are committed to providing our clients with detailed quarterly reports which highlight the impact made by their investment. The impact is measured by engagement analytics, content analysis, engagement campaigns and activities, and learner feedback.</p>
+                                <span class="span-img"><img src="./assets/complete.png" alt=""></span>
+                                <p>We are committed to providing our clients with detailed quarterly reports which highlight the impact made by
+                                    their investment. The impact is measured by engagement analytics, content analysis, engagement campaigns and
+                                    activities, and learner feedback.</p>
                             </div>
                         </div>
                        
@@ -901,10 +939,35 @@
             </section>
 
         </div> 
+        <section class="descr">
+            <div class="B-BBEE_disclaimer">
+                <h5><b>Disclaimer</b></h5>
+                <p>All of our B-BBEE partner companies are VAT registered entities, and where applicable, VAT is EXCLUDED from this proposal.
+    
+                </p>
+                <p>As per the guidelines of Section 18A of the Income Tax Act, HM Pitjie Foundation NPC cannot issue
+                    a tax
+                    invoice for donations if a S18A certificate is required</p>
+                <p>The generated proposal and any eligible points calculated by our online B-BBEE tool are not a
+                    guarantee
+                    that all eligible points will be achieved by you..</p>
+                <p>The points are an approximation of the potential points that could be earned by you dependent
+                    on your
+                    unique circumstances, any points that you are currently already earning, and
+                    your current B-BBEE setup.
+                </p>
+                <p><b>Although every effort has been made by us to ensure the accuracy of our online B-BBEE
+                        tool, we,
+                        Jendamark Automation (Pty) Ltd, accept no liability in respect of any
+                        errors contained therein, and under no circumstances will we be liable for any loss or
+                        damages
+                        whatsoever arising from the use of this tool.</b>
+                </p>
+            </div>
+        </section>
 
     </div>
 
-    
     <footer class="social">
         <div class="social_bar">
             <div class="social_icons">
