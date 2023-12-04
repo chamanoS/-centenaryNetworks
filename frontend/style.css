@@ -120,21 +120,20 @@ a {
     padding-top: 150px;
     font-family: sans-serif;
     padding-left: 80px;
-    width: 35%;
+    width: 45%;
 }
 .title{
     font-size: 39px;
     font-weight:700;
     margin-bottom: 30px;
 }
-.text p{
-    font-size: 18px;
+.text h4{
+    font-size: 16px;
+    margin-top: -30px;
     font-weight: 600;
 }
 .span-color{
     font-size: 28px!important;
-    
-
 }
 .verified{
     padding-top: 80px;
@@ -158,7 +157,7 @@ a {
     display: flex;
     justify-content: center; 
     align-items: center;
-    padding-left: 80px;
+    padding-left: 70px;
     margin-right: 60px;
     font-size: 45px;
     color: #4a5568;
@@ -243,13 +242,12 @@ a {
     margin-bottom: 40px;
 } */
 .card-titles h1{
- font-size: 36px;
- font-weight: 600;
+    font: 31px poppins,sans-serif;
  margin-bottom: 13px;
 }
 .card-titles p {
-    font-weight: 600;
-    font-size: 16px;
+    font: 20px, poppins, sans-serif;
+    color: #4a5568!important;
    }
 .card img {
     width: 250px;
@@ -258,16 +256,17 @@ a {
 .card h3{
     font-size: 31px;
     margin-bottom: 10px;
-  
+    color: #4a5568!important;
 }
 
 .card h5{
     margin-bottom: 25px;
-    font-size: 15px;
-    color: #4d4d4d;
+    color: #414042;
+    font: 16px, poppins, sans-serif;
 }
 .card p{
-    color: #949494;
+    color: #414042c2;
+    font-size: 15px;
 }
 .arrows{
     width: 40px;
@@ -299,13 +298,12 @@ a {
 }
 
 .FAQ-titles h1{
-    font-size: 36px;
-    font-weight: 600;
+    font: 31px poppins,sans-serif;
     margin-bottom: 20px;
    }
 .FAQ-titles p {
-    font-weight: 600;
-    font-size: 16px;
+    font: 20px poppins, sans-serif;
+    color: #4a5568!important;
     }
     .dropdown-item{
         border-bottom: 2px solid rgba(71, 71, 71, 0.178);
@@ -317,8 +315,9 @@ a {
         cursor: pointer;
         padding: 12px 0;
     }
-    .dropdown-header{
+    .dropdown-header h3{
         color: #333a46e8;
+        font: 19px poppins, sans-serif;
     }
 .span img{
     width: 20px;
