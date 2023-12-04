@@ -261,7 +261,7 @@ a {
 
 .card h5{
     margin-bottom: 25px;
-    color: #414042;
+    color: rgb(74, 85, 104) !important;
     font: 16px, poppins, sans-serif;
 }
 .card p{
