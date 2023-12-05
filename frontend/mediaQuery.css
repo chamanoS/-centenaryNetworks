@@ -29,9 +29,7 @@
     .donate {
         display: none;
     }
-    .text{
-        width: 55%;
-    }
+  
     .title{
         font-size: 30px;
         margin-left: -70px;
@@ -166,15 +164,17 @@
         height: auto;
     }
     .text{
-        width: 45%;
+     
+        margin-top: -20px;
     }
     .title{
         margin-left: -40px;
-        font-size: 22px;
+        font-size: 30px;
+        margin-top: -70px;
     }
-    .text p{
+    .text h4{
         margin-left: -40px;
-        font-size: 13px;
+        font-size: 18px!important;
     }
     .verified{
         margin-left:-40px ;
@@ -189,11 +189,14 @@
     .partner-section h1{
         font-size: 26px;
         padding: 10px 0;
-        margin-left: -40px;
     }
     .list-slide img{
         width: 70px;
         height: auto;
+    }
+    .B-BBEE{
+        margin-top: -90px;
+        margin-bottom: -50px;
     }
     .B-BBEE_div h5{
         width: 100%;
@@ -202,18 +205,14 @@
         margin-top: 20px;
     }
 
-    /* .B-BBEE_btn a{ 
-        margin: 0;
-        padding: 10px;
-        font-size: 15px;
-        margin-left: 80px;
-        text-align: center;
-    } */
     .B-BBEE_icons{
         display: inline;
     }
     .B-BBEE_icons img{
         margin-left: 50px;
+    }
+    .computer{
+        margin-bottom: -140px;
     }
     .Training_div2{
         display: inline-block;
@@ -243,14 +242,6 @@
     .revolution_icons{
         display: inline-block;
     }
-    /* .revolution_icons{
-        margin:16px 0px;
-        padding: 0px 24px;
-        display: flex;
-        display: inline-block;
-        align-items: center;
-        
-    } */
     .social_impact_container{
         display: inline-block;
     }
@@ -261,6 +252,9 @@
     .scroll-arrows{
         display: none;
     }
+    .main-card-wrapper{
+        margin-top: -80px;
+    }
     .FAQ{
         margin: 50px;
     }
@@ -270,6 +264,9 @@
     }
     .span-img img{
         margin-bottom: 10px;
+    }
+    .descr{
+        padding: 0 0 ;
     }
     
 }
