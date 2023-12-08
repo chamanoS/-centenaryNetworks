@@ -1,11 +1,4 @@
-*{
-    margin: 0;
-    padding: 0;
 
-}
-body{
-    font-family: Arial, Helvetica, sans-serif;
-}
 .faded-y{
     color: #4a5568!important;
 }
@@ -76,7 +69,8 @@ body{
     text-align: center;
 }
 .B-BBEE_div h1{
-   font: 30px Poppins,sans-serif
+   font: 30px Poppins,sans-serif;
+   color: #4a5568;
 }
 .descr{
     padding: 0 80px;
@@ -742,7 +736,6 @@ span{
 .Training_div1 P{
     color: #414042;
     font-size: 16px;
-    font-family: sans-serif;
 }
 
  .Training_img1{
@@ -848,7 +841,6 @@ span{
 }
 .colrt{
     color: #f76e13;
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: 900;
     font-size: 50px;
 }
@@ -861,7 +853,6 @@ span{
 .revolution{
     background-color: #4a5568;
     padding: 48px 8px;
-    font-family:Poppins,sans-serif;
     margin-bottom: 70px;
 }
 
@@ -947,7 +938,6 @@ span{
 .social_impact{
     padding: 48px 8px;
     height: 400px;
-    font-family:Poppins,sans-serif;
 }
 
 .social_impact_container{

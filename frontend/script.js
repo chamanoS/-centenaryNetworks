@@ -211,3 +211,24 @@ function removeDisabled(event){
 }
 
 
+  
+const myArray = [
+  {
+    string: "me1",
+    string: "me2",
+    string: "me3",
+  }, {
+    string: "me4",
+    string: "you",
+    string: "me5",
+  },
+]
+
+console.log(myArray)
+console.log(myArray[1]);
+
+for (let i = 0; i < myArray.length; i++) {
+  const element = myArray[i];
+  console.log(element[1] );
+
+}
