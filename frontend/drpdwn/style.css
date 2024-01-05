@@ -1,0 +1,31 @@
+.img-hover img{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.up{
+    display: none;
+}
+
+.accordition-headers{
+    background-color: aliceblue;
+    padding: 2px 20px;
+    width: 30%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    
+}
+.parent{
+    margin: 5px 100px;
+}
+.dropdown{
+    padding: 2px;
+    margin-top: 3px;
+    background-color: azure;
+    width: 33.3%;
+    display: none;
+}
+.active{
+    display: block;
+}
