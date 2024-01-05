@@ -121,7 +121,7 @@ a {
 .main-banner {
     min-height: 50vh;
     margin-top: 73px;
-    background-image: url('./assets/img.png'); 
+    background-image: url('./assets/imgs.png'); 
     background-size: cover; 
     background-position: 50%; 
     opacity: 80%;
