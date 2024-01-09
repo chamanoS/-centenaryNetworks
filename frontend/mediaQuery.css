@@ -158,6 +158,7 @@
     .btn-collapse {
         display: block;
         margin-top: -30px;
+        margin-right: 15px;
     }
 
     .btn-collapse img {

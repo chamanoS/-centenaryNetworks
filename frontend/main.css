@@ -139,7 +139,16 @@
 .reveal{
     display: block;
 }
-
+.summary{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    background-color: #000;
+}
+.summary img{
+    width: 20px;
+    height: 20px;
+}
 .accords{
     margin: 5px 0 20px 0;
     border-radius: 7px;
