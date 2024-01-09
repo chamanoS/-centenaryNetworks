@@ -10,6 +10,7 @@
     .btn-collapse {
         display: block;
         margin-top: -30px;
+        margin-right: 15px;
     }
 
     .btn-collapse img {
@@ -135,7 +136,16 @@
     .descr {
         padding: 5px;
     }
-
+    .point-pc{
+        display: none;
+    }
+    .B-BBEE-form{
+        width: 100%;
+    }
+    .B-BBEE-Points{
+        display: block;
+        margin: auto -15px;
+    }
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
@@ -267,6 +277,16 @@
     }
     .descr{
         padding: 0 0 ;
+    }
+    .point-pc{
+        display: none;
+    }
+    .B-BBEE-form{
+        width: 100%;
+    }
+    .B-BBEE-Points{
+        display: block;
+        margin: auto -25px;
     }
     
 }
