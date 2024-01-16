@@ -25,20 +25,20 @@ function Dropdown(dropdownId) {
 document.addEventListener('DOMContentLoaded', function () {
 
   const collapseMenu = document.getElementById("btn-collapse");
-  const navbarCollapse = document.getElementById("navbar-collapse")
+  const navbarCollapse = document.getElementById("navbar-collapse");
 
   collapseMenu.addEventListener("click", () => {
+    console.log("It's working");
+    navbarCollapse.classList.toggle("reveal");
 
-    console.log("Its working")
-    if (navbarCollapse.style.display === 'none' || navbarCollapse.style.display === '') {
-      navbarCollapse.style.display = 'block';
-    } else {
-      navbarCollapse.style.display = 'none';
-    }
-
-  })
-
-})
+    // Toggle the display property
+    // if (navbarCollapse.style.display === 'none' || navbarCollapse.style.display === '') {
+    //   navbarCollapse.style.display = 'block';
+    // } else {
+    //   navbarCollapse.style.display = 'none';
+    // }
+  });
+});
 
 const form = document.getElementById("myForm");
 const modalForm = document.getElementById("modal-form");
@@ -69,7 +69,6 @@ getArrowDown.addEventListener("click", ()=>{
   arrowUps.style.display = "block";
   arrowDowns.style.display = "none";
 })
-
 
 
 const BEE_Cal = document.getElementById("B-BBEE_calculation")

@@ -119,14 +119,12 @@
 .B-BBEE_div{
     margin-bottom: 30px;  
 }
-.hide{
-    display: none;
-}
+
 
 /* Calculating points */
 .B-BBEE-Points{
     width: 100%;
-    display: none;
+    display: none !important;
     margin: 10px 6px;
     padding: 16px;
     border-radius: 6px;
@@ -136,8 +134,11 @@
 .B-BBEE-wraper{
     display: flex;
 }
+.hide{
+    display: none !important;
+}
 .reveal{
-    display: block;
+    display: block !important;
 }
 .summary{
     display: flex;
